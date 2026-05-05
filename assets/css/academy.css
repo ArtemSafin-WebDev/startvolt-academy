@@ -2,7 +2,7 @@
   position: relative;
   z-index: 25;
   overflow: hidden;
-  min-height: 60px;
+  min-height: 6rem;
   color: #fff;
   background: #aa171f url("../img/academy-top-panel/decor.svg") center / 100% 100% no-repeat;
 }
@@ -11,15 +11,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  min-height: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  gap: 2.4rem;
+  min-height: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .academy-top-panel__logo {
-  width: 38px;
-  height: 38px;
+  width: 3.8rem;
+  height: 3.8rem;
   flex: 0 0 auto;
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
+  gap: 0.4rem;
   max-width: none;
   margin: 0;
   color: #fff;
@@ -51,9 +51,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-height: 40px;
-  padding: 11px 16px;
+  gap: 0.8rem;
+  min-height: 4rem;
+  padding: 1.1rem 1.6rem;
   color: #fff;
   background: #1a1919;
   font-weight: 500;
@@ -65,8 +65,8 @@
 }
 
 .academy-top-panel__button-icon {
-  width: 16px;
-  height: 16px;
+  width: 1.6rem;
+  height: 1.6rem;
   flex: 0 0 auto;
   fill: currentColor;
 }
@@ -90,7 +90,7 @@
 }
 
 .academy-heading {
-  margin: 16px 0 0;
+  margin: 1.6rem 0 0;
   color: #1a1919;
   font-weight: 700;
   font-size: 5.4rem;
@@ -114,7 +114,7 @@
 .academy-breadcrumbs {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 1.8rem;
   color: #9a9a9a;
   font-weight: 500;
   font-size: 1.6rem;
@@ -129,21 +129,21 @@
 .academy-breadcrumbs__separator {
   display: grid;
   place-items: center;
-  width: 26px;
-  height: 17px;
+  width: 2.6rem;
+  height: 1.7rem;
   color: #a7a6aa;
 }
 
 .academy-breadcrumbs__separator svg {
-  width: 26px;
-  height: 17px;
+  width: 2.6rem;
+  height: 1.7rem;
   fill: currentColor;
 }
 
 .academy-intro {
   position: relative;
   overflow: hidden;
-  min-height: 441px;
+  min-height: 44.1rem;
   color: #fff;
   background: linear-gradient(180deg, #000 2%, #bb2830 171%);
 }
@@ -167,14 +167,14 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 331px;
+  grid-template-columns: minmax(0, 1fr) 33.1rem;
   grid-template-rows: auto 1fr;
   align-content: start;
-  column-gap: 48px;
-  row-gap: 27px;
-  min-height: 441px;
-  padding-top: 31px;
-  padding-bottom: 32px;
+  column-gap: 4.8rem;
+  row-gap: 2.7rem;
+  min-height: 44.1rem;
+  padding-top: 3.1rem;
+  padding-bottom: 3.2rem;
 }
 
 .academy-breadcrumbs {
@@ -184,8 +184,8 @@
 .academy-intro__content {
   grid-column: 1;
   grid-row: 2;
-  max-width: 655px;
-  margin-top: 8px;
+  max-width: 65.5rem;
+  margin-top: 0.8rem;
 }
 
 .academy-intro__title {
@@ -198,8 +198,8 @@
 }
 
 .academy-intro__lead {
-  max-width: 400px;
-  margin: 28px 0 0;
+  max-width: 40rem;
+  margin: 2.8rem 0 0;
   font-weight: 500;
   font-size: 2.3rem;
   line-height: 1.226;
@@ -213,19 +213,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 4px;
-  width: 331px;
-  margin: 16px 0 0;
+  gap: 0.4rem;
+  width: 33.1rem;
+  margin: 1.6rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .academy-intro__tags li {
-  min-height: 34px;
-  padding: 7px 12px 7px 16px;
+  min-height: 3.4rem;
+  padding: 0.7rem 1.2rem 0.7rem 1.6rem;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
+  border-radius: 0.2rem;
   font-family: var(--franklin-c);
   font-size: 1.4rem;
   line-height: 2rem;
@@ -233,19 +233,19 @@
 }
 
 .academy-program {
-  padding: 56px 0;
+  padding: 5.6rem 0;
   background: #f5f5f5;
 }
 
 .academy-program .academy-heading {
-  max-width: 1174px;
+  max-width: 117.4rem;
 }
 
 .academy-program__cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  margin: 40px 0 0;
+  gap: 0.8rem;
+  margin: 4rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -258,7 +258,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 182px;
+  min-height: 18.2rem;
   overflow: hidden;
   background: #fff;
 }
@@ -277,9 +277,9 @@
 .academy-program-card h3 {
   position: relative;
   z-index: 1;
-  max-width: 291px;
-  margin: 0 0 0 122px;
-  padding-right: 16px;
+  max-width: 29.1rem;
+  margin: 0 0 0 12.2rem;
+  padding-right: 1.6rem;
   color: #232323;
   font-weight: 500;
   font-size: 2.5rem;
@@ -288,29 +288,29 @@
 }
 
 .academy-formats {
-  padding: 56px 0;
+  padding: 5.6rem 0;
   background: #fff;
 }
 
 .academy-formats__inner {
   display: grid;
-  grid-template-columns: minmax(0, 651px) minmax(0, 676px);
-  gap: 33px;
+  grid-template-columns: minmax(0, 65.1rem) minmax(0, 67.6rem);
+  gap: 3.3rem;
   align-items: end;
 }
 
 .academy-formats__copy {
-  min-height: 509px;
+  min-height: 50.9rem;
   display: flex;
   flex-direction: column;
 }
 
 .academy-formats__copy .academy-heading {
-  max-width: 654px;
+  max-width: 65.4rem;
 }
 
 .academy-formats__text {
-  max-width: 511px;
+  max-width: 51.1rem;
   margin: auto 0 0;
   color: #343434;
   font-size: 1.8rem;
@@ -319,17 +319,17 @@
 
 .academy-format-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 334px));
-  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 33.4rem));
+  gap: 0.8rem;
   justify-content: end;
 }
 
 .academy-format-card {
   position: relative;
   display: flex;
-  min-height: 364px;
+  min-height: 36.4rem;
   overflow: hidden;
-  padding: 24px;
+  padding: 2.4rem;
   color: #fff;
   background: linear-gradient(180deg, #000 2.1%, #bb2830 170.6%);
 }
@@ -345,7 +345,7 @@
 
 .academy-format-card:hover {
   background: linear-gradient(180deg, #000 2.1%, #bb2830 118%);
-  box-shadow: 0 4px 9.7px -4px rgba(8, 0, 1, 0.2);
+  box-shadow: 0 0.4rem 0.97rem -0.4rem rgba(8, 0, 1, 0.2);
 }
 
 .academy-format-card:hover::before {
@@ -360,14 +360,14 @@
 
 .academy-format-card__tag {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 2.4rem;
+  left: 2.4rem;
   display: inline-flex;
-  min-height: 30px;
+  min-height: 3rem;
   align-items: center;
-  padding: 6px 16px;
+  padding: 0.6rem 1.6rem;
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 2px;
+  border-radius: 0.2rem;
   font-size: 1.2rem;
   line-height: 1.4rem;
 }
@@ -377,8 +377,8 @@
   top: 0;
   right: 0;
   z-index: 0;
-  width: 127px;
-  height: 219px;
+  width: 12.7rem;
+  height: 21.9rem;
   opacity: 0.9;
   object-fit: contain;
   object-position: top right;
@@ -387,9 +387,9 @@
 .academy-format-card__body {
   align-self: flex-end;
   display: grid;
-  gap: 8px;
-  width: 230px;
-  padding-right: 4px;
+  gap: 0.8rem;
+  width: 23rem;
+  padding-right: 0.4rem;
 }
 
 .academy-format-card__body strong {
@@ -407,22 +407,22 @@
 
 .academy-arrow {
   position: absolute;
-  right: 24px;
-  bottom: 24px;
+  right: 2.4rem;
+  bottom: 2.4rem;
   z-index: 1;
   display: grid;
   place-items: center;
-  width: 39px;
-  height: 39px;
+  width: 3.9rem;
+  height: 3.9rem;
   color: #fff;
   background: #bb2830;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   transition: background-color 0.24s ease, color 0.24s ease, transform 0.24s ease;
 }
 
 .academy-arrow svg {
-  width: 16px;
-  height: 16px;
+  width: 1.6rem;
+  height: 1.6rem;
   fill: currentColor;
 }
 
@@ -435,7 +435,7 @@
 .academy-approach {
   position: relative;
   overflow: hidden;
-  min-height: 607px;
+  min-height: 60.7rem;
   color: #fff;
   background: linear-gradient(74deg, #000 67%, #bb2830 124%);
 }
@@ -445,16 +445,16 @@
   z-index: 1;
   display: flex;
   justify-content: flex-end;
-  min-height: 607px;
-  padding-top: 64px;
-  padding-bottom: 56px;
+  min-height: 60.7rem;
+  padding-top: 6.4rem;
+  padding-bottom: 5.6rem;
 }
 
 .academy-approach__copy {
   position: relative;
   display: block;
-  width: 672px;
-  min-height: 487px;
+  width: 67.2rem;
+  min-height: 48.7rem;
 }
 
 .academy-approach .academy-section-label {
@@ -465,7 +465,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  max-width: 563px;
+  max-width: 56.3rem;
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.8rem;
@@ -473,14 +473,14 @@
 }
 
 .academy-events {
-  padding: 40px 0 114px;
+  padding: 4rem 0 11.4rem;
   background: #fff;
 }
 
 .academy-events__head {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  gap: 40px;
+  gap: 4rem;
   align-items: end;
 }
 
@@ -491,7 +491,7 @@
 
 .academy-events__note {
   justify-self: end;
-  max-width: 513px;
+  max-width: 51.3rem;
   margin: 0;
   color: #9a9a9a;
   font-size: 1.6rem;
@@ -502,16 +502,16 @@
 .academy-events__tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 56px;
+  gap: 0.8rem;
+  margin-top: 5.6rem;
 }
 
 .academy-events__tab {
-  min-height: 35px;
-  padding: 2px 16px;
+  min-height: 3.5rem;
+  padding: 0.2rem 1.6rem;
   color: #000;
   background: #f9f9f9;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.1;
@@ -524,13 +524,13 @@
 }
 
 .academy-events__panel {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 .academy-events__grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .academy-events__grid.swiper-wrapper {
@@ -540,9 +540,9 @@
 .academy-event-card {
   position: relative;
   overflow: hidden;
-  min-height: 270px;
+  min-height: 27rem;
   background: #f9f9f9;
-  border-radius: 1.4px;
+  border-radius: 0.14rem;
 }
 
 .academy-event-card.is-hidden {
@@ -565,11 +565,11 @@
   bottom: 0;
   left: 0;
   display: grid;
-  gap: 16px;
-  min-height: 120px;
-  padding: 14px;
+  gap: 1.6rem;
+  min-height: 12rem;
+  padding: 1.4rem;
   background: rgba(245, 245, 245, 0.92);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(1.5rem);
 }
 
 .academy-event-card time {
@@ -580,7 +580,7 @@
 }
 
 .academy-event-card h3 {
-  margin: -8px 0 0;
+  margin: -0.8rem 0 0;
   color: #1a1919;
   font-weight: 500;
   font-size: 1.8rem;
@@ -594,9 +594,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  min-height: 35px;
-  padding: 7px 8px 8px 12px;
+  gap: 0.4rem;
+  min-height: 3.5rem;
+  padding: 0.7rem 0.8rem 0.8rem 1.2rem;
   color: #fff;
   background: #bb2830;
   font-weight: 500;
@@ -606,8 +606,8 @@
 }
 
 .academy-event-card__button-icon {
-  width: 8px;
-  height: 8px;
+  width: 0.8rem;
+  height: 0.8rem;
   flex: 0 0 auto;
   fill: currentColor;
 }
@@ -638,7 +638,7 @@
 
 .academy-events__empty {
   display: none;
-  margin: 24px 0 0;
+  margin: 2.4rem 0 0;
   color: #9a9a9a;
   font-size: 1.8rem;
   line-height: 1.3;
@@ -666,7 +666,7 @@
   }
 
   .academy-formats__text {
-    margin-top: 32px;
+    margin-top: 3.2rem;
   }
 
   .academy-format-cards {
@@ -680,25 +680,25 @@
 
 @media (max-width: 900px) {
   .academy-top-panel {
-    min-height: 40px;
+    min-height: 4rem;
     background-image: url("../img/academy-top-panel/decor-mobile.svg");
   }
 
   .academy-top-panel__inner {
     justify-content: flex-start;
-    gap: 8px;
-    min-height: 40px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    gap: 0.8rem;
+    min-height: 4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
   }
 
   .academy-top-panel__logo {
-    width: 26px;
-    height: 26px;
+    width: 2.6rem;
+    height: 2.6rem;
   }
 
   .academy-top-panel__text {
-    max-width: 240px;
+    max-width: 24rem;
     white-space: normal;
   }
 
@@ -711,9 +711,9 @@
   }
 
   .academy-top-panel__button {
-    min-height: 25px;
+    min-height: 2.5rem;
     margin-left: auto;
-    padding: 5px 8px;
+    padding: 0.5rem 0.8rem;
     font-size: 1rem;
   }
 
@@ -729,43 +729,43 @@
 
   .academy-intro,
   .academy-intro__inner {
-    min-height: 709px;
+    min-height: 70.9rem;
   }
 
   .academy-intro__inner {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     row-gap: 0;
-    padding-top: 24px;
-    padding-bottom: 32px;
+    padding-top: 2.4rem;
+    padding-bottom: 3.2rem;
   }
 
   .academy-breadcrumbs {
-    gap: 10px;
+    gap: 1rem;
     font-size: 1.2rem;
   }
 
   .academy-breadcrumbs__separator,
   .academy-breadcrumbs__separator svg {
-    width: 20px;
+    width: 2rem;
   }
 
   .academy-intro__content {
     grid-column: 1;
     grid-row: 2;
-    margin-top: 46px;
+    margin-top: 4.6rem;
   }
 
   .academy-intro__title {
-    max-width: 350px;
+    max-width: 35rem;
     font-size: 7.8rem;
     line-height: 0.95;
     letter-spacing: 0.08em;
   }
 
   .academy-intro__lead {
-    max-width: 350px;
-    margin-top: 32px;
+    max-width: 35rem;
+    margin-top: 3.2rem;
     font-size: 2rem;
     line-height: 1.4;
   }
@@ -776,32 +776,32 @@
     justify-self: start;
     justify-content: flex-start;
     width: 100%;
-    margin-top: 16px;
+    margin-top: 1.6rem;
   }
 
   .academy-intro__tags li {
-    min-height: 34px;
-    padding: 7px 8px;
+    min-height: 3.4rem;
+    padding: 0.7rem 0.8rem;
     font-size: 1.2rem;
   }
 
   .academy-program {
-    padding: 40px 0;
+    padding: 4rem 0;
   }
 
   .academy-program__cards {
     grid-template-columns: 1fr;
-    gap: 4px;
-    margin-top: 32px;
+    gap: 0.4rem;
+    margin-top: 3.2rem;
   }
 
   .academy-program-card {
-    min-height: 120px;
+    min-height: 12rem;
   }
 
   .academy-program-card img {
     position: static;
-    width: 100px;
+    width: 10rem;
     flex: 0 0 auto;
     object-position: left bottom;
   }
@@ -813,15 +813,15 @@
   }
 
   .academy-formats {
-    padding: 24px 0 40px;
+    padding: 2.4rem 0 4rem;
   }
 
   .academy-formats__inner {
-    gap: 40px;
+    gap: 4rem;
   }
 
   .academy-formats__text {
-    margin-top: 24px;
+    margin-top: 2.4rem;
     line-height: 1;
   }
 
@@ -835,52 +835,52 @@
 
   .academy-format-cards {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 0.4rem;
   }
 
   .academy-format-card {
-    min-height: 321px;
+    min-height: 32.1rem;
   }
 
   .academy-format-card__body {
-    width: min(230px, calc(100% - 60px));
+    width: min(23rem, calc(100% - 6rem));
   }
 
   .academy-approach,
   .academy-approach__inner {
-    min-height: 767px;
+    min-height: 76.7rem;
   }
 
   .academy-approach__inner {
     justify-content: flex-start;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .academy-approach__copy {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 320px;
+    min-height: 32rem;
     justify-content: flex-start;
   }
 
   .academy-approach__copy p:last-child {
     position: static;
-    max-width: 350px;
-    margin-top: 32px;
+    max-width: 35rem;
+    margin-top: 3.2rem;
     font-size: 1.6rem;
     line-height: 1.12;
   }
 
   .academy-events {
-    padding: 40px 0 80px;
+    padding: 4rem 0 8rem;
   }
 
   .academy-events__head {
     grid-template-columns: 1fr;
-    gap: 16px;
-    min-height: 150px;
+    gap: 1.6rem;
+    min-height: 15rem;
   }
 
   .academy-events__head .academy-heading {
@@ -889,16 +889,16 @@
 
   .academy-events__note {
     justify-self: start;
-    max-width: 330px;
+    max-width: 33rem;
     text-align: left;
   }
 
   .academy-events__tabs {
     flex-wrap: nowrap;
-    gap: 8px;
-    margin-top: 32px;
+    gap: 0.8rem;
+    margin-top: 3.2rem;
     overflow-x: auto;
-    padding-bottom: 4px;
+    padding-bottom: 0.4rem;
     scrollbar-width: none;
   }
 
@@ -911,7 +911,7 @@
   }
 
   .academy-events__panel {
-    margin-top: 16px;
+    margin-top: 1.6rem;
   }
 
   .academy-events__slider {
@@ -924,7 +924,7 @@
   }
 
   .academy-event-card {
-    min-height: 359px;
+    min-height: 35.9rem;
   }
 
   .academy-event-card.is-hidden {
@@ -932,8 +932,8 @@
   }
 
   .academy-event-card__content {
-    gap: 21px;
-    padding: 18px;
+    gap: 2.1rem;
+    padding: 1.8rem;
   }
 
   .academy-event-card time {
@@ -941,13 +941,13 @@
   }
 
   .academy-event-card h3 {
-    margin-top: -10px;
+    margin-top: -1rem;
     font-size: 2.4rem;
     line-height: 1;
   }
 
   .academy-event-card__button {
-    min-height: 47px;
+    min-height: 4.7rem;
     font-size: 1.9rem;
   }
 
@@ -955,13 +955,13 @@
     position: static;
     display: flex;
     justify-content: center;
-    gap: 4px;
-    margin-top: 18px;
+    gap: 0.4rem;
+    margin-top: 1.8rem;
   }
 
   .academy-events__pagination .swiper-pagination-bullet {
-    width: 7px;
-    height: 7px;
+    width: 0.7rem;
+    height: 0.7rem;
     margin: 0 !important;
     background: #d9d9d9;
     border-radius: 0;
@@ -969,8 +969,8 @@
   }
 
   .academy-events__pagination .swiper-pagination-bullet-active {
-    width: 9px;
-    height: 9px;
+    width: 0.9rem;
+    height: 0.9rem;
     background: #bb2830;
   }
 }

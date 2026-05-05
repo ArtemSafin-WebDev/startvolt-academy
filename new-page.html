@@ -4,11 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
-    <title>Новая страница STARTVOLT</title>
+    <title>Академия STARTVOLT</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/startvolt-base.css">
+    <link rel="stylesheet" href="assets/css/academy.css">
   </head>
   <body>
+    <aside class="academy-top-panel" aria-label="Фирменный магазин Carville">
+      <div class="container academy-top-panel__inner">
+        <img class="academy-top-panel__logo" src="assets/img/academy-top-panel/carville.svg" width="38" height="38" alt="Carville">
+        <p class="academy-top-panel__text">
+          <span class="academy-top-panel__title">Карвильшоп – фирменный магазин</span>
+          <span class="academy-top-panel__subtitle">брендов LUZAR, TRIALLI, STARTVOLT, AIRLINE и CARVILLE RACING</span>
+        </p>
+        <a class="academy-top-panel__button" href="https://carvilleshop.ru/">
+          Карвильшоп
+          <svg class="academy-top-panel__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M11.9981 3.33301C12.1746 3.33313 12.3439 3.40357 12.4688 3.52832C12.5938 3.65334 12.6641 3.82319 12.6641 4V9.33301C12.6641 9.50982 12.5938 9.67966 12.4688 9.80469C12.3439 9.92954 12.1747 9.99988 11.9981 10C11.8213 10 11.6514 9.92967 11.5264 9.80469C11.4014 9.67966 11.3311 9.50982 11.3311 9.33301V5.60938L4.69729 12.2422C4.57155 12.3636 4.40334 12.4312 4.22854 12.4297C4.05379 12.4281 3.88629 12.358 3.76272 12.2344C3.63927 12.1108 3.56892 11.9432 3.5674 11.7686C3.56599 11.5939 3.63355 11.4254 3.7549 11.2998L10.3887 4.66699H6.66408C6.48734 4.66694 6.31739 4.59666 6.1924 4.47168C6.06744 4.34666 5.99807 4.17677 5.99807 4C5.99807 3.82323 6.06744 3.65334 6.1924 3.52832C6.31739 3.40334 6.48734 3.33306 6.66408 3.33301H11.9981Z" />
+          </svg>
+        </a>
+      </div>
+    </aside>
+
     <header class="page-header">
       <div class="container">
         <div class="page-header__row">
@@ -26,43 +44,82 @@
 
           <div class="page-header__links page-header__links--right">
             <a class="page-header__link header-icon-link" href="https://startvolt.com/calendar/">
-              <span class="header-icon-link__mark" aria-hidden="true">C</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M5 0a1 1 0 0 1 1 1v1h4V1a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 16 4.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 13.5v-9A2.5 2.5 0 0 1 2.5 2H4V1a1 1 0 0 1 1-1Zm9 6H2v7.5c0 .28.22.5.5.5h11a.5.5 0 0 0 .5-.5V6ZM2.5 4a.5.5 0 0 0-.5.5V5h12v-.5a.5.5 0 0 0-.5-.5h-11Z"/>
+              </svg>
               <span class="header-icon-link__text">Календарь</span>
             </a>
             <a class="page-header__link header-icon-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">
-              <span class="header-icon-link__mark" aria-hidden="true">X</span>
+              <svg viewBox="0 0 18 16" aria-hidden="true">
+                <path d="M7 .25A.27.27 0 0 0 6.75 0h-1.5A.25.25 0 0 0 5 .25V5h2v-4.75Zm-4 0A.27.27 0 0 0 2.75 0H.25A.25.25 0 0 0 0 .25V5h3v-4.75Zm-3 15.5a.23.23 0 0 0 .25.25h2.5a.24.24 0 0 0 .25-.25V11H0v4.75Zm13-15.5a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm3 0a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm-6 0A.27.27 0 0 0 9.75 0h-.5A.25.25 0 0 0 9 .25V5h1v-4.75Zm4 15.5a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-9 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11H5v4.75Zm6 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-2 0a.23.23 0 0 0 .25.25h.5a.24.24 0 0 0 .25-.25V11H9v4.75ZM17.75 7H.25a.25.25 0 0 0-.25.25v1.5A.23.23 0 0 0 .25 9h17.5a.24.24 0 0 0 .25-.25v-1.5a.27.27 0 0 0-.25-.25Z"/>
+              </svg>
               <span class="header-icon-link__text">Кросс-коды</span>
             </a>
+            <a class="page-header__link header-icon-link" href="https://startvolt.com/materials/foto/">
+              <svg viewBox="0 0 12 16" aria-hidden="true">
+                <path d="M12 3.81a.93.93 0 0 0-.25-.53l-3-3A1 1 0 0 0 8.19 0H8v4h4ZM7.75 5A.72.72 0 0 1 7 4.25V0H.75A.74.74 0 0 0 0 .75v14.5a.72.72 0 0 0 .75.75h10.5a.74.74 0 0 0 .75-.75V5Zm-4.25.5A1.5 1.5 0 0 1 5 7a1.49 1.49 0 0 1-1.5 1.5A1.5 1.5 0 0 1 2 7a1.52 1.52 0 0 1 1.5-1.5ZM10 13H2v-1.5l1.22-1.25a.4.4 0 0 1 .53 0L5 11.5l3.25-3.22a.37.37 0 0 1 .53 0L10 9.5V13Z"/>
+              </svg>
+              <span class="header-icon-link__text">Фото</span>
+            </a>
             <a class="page-header__link header-icon-link" href="https://startvolt.com/materials/">
-              <span class="header-icon-link__mark" aria-hidden="true">M</span>
+              <svg viewBox="0 0 18 14" aria-hidden="true">
+                <path d="M16.31 2.25H9.56L7.63.35A1.14 1.14 0 0 0 6.82 0H1.69A1.69 1.69 0 0 0 0 1.69v10.12a1.67 1.67 0 0 0 1.69 1.69h14.62A1.69 1.69 0 0 0 18 11.81V3.94a1.71 1.71 0 0 0-1.69-1.69Zm0 9.56H1.69V1.69h4.92l1.9 1.93a1.12 1.12 0 0 0 .81.32h7v7.87Z"/>
+              </svg>
               <span class="header-icon-link__text">Материалы</span>
             </a>
+            <a class="cart-button" href="https://startvolt.com/cart/" aria-label="Корзина">
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="M17.22 4H4.5l-.28-1.38A.77.77 0 0 0 3.5 2H.38A.36.36 0 0 0 0 2.38v.75c0 .22.16.37.38.37h2.5l2.15 11.13A1.95 1.95 0 0 0 4.5 16c0 1.13.88 2 2 2a1.97 1.97 0 0 0 1.72-3h4.53c-.16.28-.25.72-.25 1 0 1.13.88 2 2 2 1.09 0 2-.88 2-2 0-.56-.25-1.06-.63-1.44l.03-.12c.1-.47-.25-.94-.75-.94H6.34L6.06 12h9.75c.38 0 .66-.22.75-.56l1.41-6.5c.1-.47-.25-.94-.75-.94ZM6.5 16.75a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm8 0a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm.72-6.25H5.75l-.97-5h11.53l-1.09 5Z" fill="currentColor"/>
+              </svg>
+            </a>
             <div class="page-header__languages">
-              <div class="page-header__languages-current">RU</div>
+              <div class="page-header__languages-current">
+                RU
+                <svg viewBox="0 0 8 5" aria-hidden="true">
+                  <path d="M3.56 4.38a.28.28 0 0 0 .4 0L7.42.93a.27.27 0 0 0 0-.4L7 .09a.27.27 0 0 0-.4 0L3.77 2.85 1 .09a.27.27 0 0 0-.4 0L.09.53a.27.27 0 0 0 0 .4l3.47 3.45Z"/>
+                </svg>
+              </div>
               <div class="page-header__languages-dropdown">
                 <div class="page-header__languages-dropdown-inner">
                   <a href="https://startvolt.com/en/">EN</a>
                 </div>
               </div>
             </div>
-            <a class="cart-button" href="https://startvolt.com/cart/" aria-label="Корзина">
+          </div>
+
+          <div class="page-header__mobile-actions">
+            <a class="cart-button cart-button--mobile-header" href="https://startvolt.com/cart/" aria-label="Корзина">
               <svg viewBox="0 0 18 18" aria-hidden="true">
                 <path d="M17.22 4H4.5l-.28-1.38A.77.77 0 0 0 3.5 2H.38A.36.36 0 0 0 0 2.38v.75c0 .22.16.37.38.37h2.5l2.15 11.13A1.95 1.95 0 0 0 4.5 16c0 1.13.88 2 2 2a1.97 1.97 0 0 0 1.72-3h4.53c-.16.28-.25.72-.25 1 0 1.13.88 2 2 2 1.09 0 2-.88 2-2 0-.56-.25-1.06-.63-1.44l.03-.12c.1-.47-.25-.94-.75-.94H6.34L6.06 12h9.75c.38 0 .66-.22.75-.56l1.41-6.5c.1-.47-.25-.94-.75-.94ZM6.5 16.75a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm8 0a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm.72-6.25H5.75l-.97-5h11.53l-1.09 5Z" fill="currentColor"/>
               </svg>
             </a>
+            <button class="page-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
-
-          <button class="page-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
         </div>
 
         <div class="page-header__mobile-links" aria-label="Быстрые ссылки">
-          <a class="page-header__mobile-link" href="https://startvolt.com/calendar/">Календарь</a>
-          <a class="page-header__mobile-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">Кросс-коды</a>
-          <a class="page-header__mobile-link" href="https://startvolt.com/materials/">Материалы</a>
+          <a class="page-header__mobile-link" href="https://startvolt.com/calendar/">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M5 0a1 1 0 0 1 1 1v1h4V1a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 16 4.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 13.5v-9A2.5 2.5 0 0 1 2.5 2H4V1a1 1 0 0 1 1-1Zm9 6H2v7.5c0 .28.22.5.5.5h11a.5.5 0 0 0 .5-.5V6ZM2.5 4a.5.5 0 0 0-.5.5V5h12v-.5a.5.5 0 0 0-.5-.5h-11Z"/>
+            </svg>
+            Календарь
+          </a>
+          <a class="page-header__mobile-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">
+            <svg viewBox="0 0 18 16" aria-hidden="true">
+              <path d="M7 .25A.27.27 0 0 0 6.75 0h-1.5A.25.25 0 0 0 5 .25V5h2v-4.75Zm-4 0A.27.27 0 0 0 2.75 0H.25A.25.25 0 0 0 0 .25V5h3v-4.75Zm-3 15.5a.23.23 0 0 0 .25.25h2.5a.24.24 0 0 0 .25-.25V11H0v4.75Zm13-15.5a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm3 0a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm-6 0A.27.27 0 0 0 9.75 0h-.5A.25.25 0 0 0 9 .25V5h1v-4.75Zm4 15.5a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-9 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11H5v4.75Zm6 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-2 0a.23.23 0 0 0 .25.25h.5a.24.24 0 0 0 .25-.25V11H9v4.75ZM17.75 7H.25a.25.25 0 0 0-.25.25v1.5A.23.23 0 0 0 .25 9h17.5a.24.24 0 0 0 .25-.25v-1.5a.27.27 0 0 0-.25-.25Z"/>
+            </svg>
+            Кросс-коды
+          </a>
+          <a class="page-header__mobile-link" href="https://startvolt.com/materials/">
+            <svg viewBox="0 0 18 14" aria-hidden="true">
+              <path d="M16.31 2.25H9.56L7.63.35A1.14 1.14 0 0 0 6.82 0H1.69A1.69 1.69 0 0 0 0 1.69v10.12a1.67 1.67 0 0 0 1.69 1.69h14.62A1.69 1.69 0 0 0 18 11.81V3.94a1.71 1.71 0 0 0-1.69-1.69Zm0 9.56H1.69V1.69h4.92l1.9 1.93a1.12 1.12 0 0 0 .81.32h7v7.87Z"/>
+            </svg>
+            Материалы
+          </a>
         </div>
       </div>
 
@@ -73,13 +130,11 @@
           <li><a class="page-header__nav-link" href="https://startvolt.com/where-buy/">Точки продаж</a></li>
           <li><a class="page-header__nav-link" href="https://startvolt.com/news/">Новости</a></li>
           <li><a class="page-header__nav-link" href="https://startvolt.com/contacts/">Контакты</a></li>
+          <li><a class="page-header__nav-link" href="https://startvolt.com/calendar/">Календарь</a></li>
+          <li><a class="page-header__nav-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">Кросс-коды</a></li>
+          <li><a class="page-header__nav-link" href="https://startvolt.com/materials/foto/">Фото</a></li>
           <li><a class="page-header__nav-link" href="https://startvolt.com/materials/">Материалы</a></li>
         </ul>
-        <a class="cart-button" href="https://startvolt.com/cart/" aria-label="Корзина">
-          <svg viewBox="0 0 18 18" aria-hidden="true">
-            <path d="M17.22 4H4.5l-.28-1.38A.77.77 0 0 0 3.5 2H.38A.36.36 0 0 0 0 2.38v.75c0 .22.16.37.38.37h2.5l2.15 11.13A1.95 1.95 0 0 0 4.5 16c0 1.13.88 2 2 2a1.97 1.97 0 0 0 1.72-3h4.53c-.16.28-.25.72-.25 1 0 1.13.88 2 2 2 1.09 0 2-.88 2-2 0-.56-.25-1.06-.63-1.44l.03-.12c.1-.47-.25-.94-.75-.94H6.34L6.06 12h9.75c.38 0 .66-.22.75-.56l1.41-6.5c.1-.47-.25-.94-.75-.94ZM6.5 16.75a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm8 0a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm.72-6.25H5.75l-.97-5h11.53l-1.09 5Z" fill="currentColor"/>
-          </svg>
-        </a>
         <div class="page-header__menu-languages">
           <span>RU</span>
           <a href="https://startvolt.com/en/">EN</a>
@@ -87,41 +142,238 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <section class="starter-hero">
-        <div class="container starter-hero__inner">
-          <div>
-            <p class="starter-hero__eyebrow">Новая страница</p>
-            <h1 class="starter-hero__title">STARTVOLT</h1>
-            <p class="starter-hero__text">Локальная заготовка с выгруженными шрифтами, логотипами, базовой сеткой, хедером и футером исходного сайта.</p>
+    <main class="page-main academy-page">
+      <section class="academy-intro">
+        <picture class="academy-intro__picture" aria-hidden="true">
+          <source media="(max-width: 767px)" srcset="assets/img/academy-intro/bg-mobile.webp">
+          <img src="assets/img/academy-intro/bg.webp" alt="">
+        </picture>
+        <div class="container academy-intro__inner">
+          <nav class="academy-breadcrumbs" aria-label="Хлебные крошки">
+            <a href="https://startvolt.com/">Главная</a>
+            <span class="academy-breadcrumbs__separator" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17">
+                <path d="M11.707 12.2015L14.8008 9.10779C14.957 8.98279 14.957 8.73279 14.8008 8.57654L11.707 5.48279C11.457 5.26404 11.082 5.42029 11.082 5.76404V7.98279H1.45703C1.23828 7.98279 1.08203 8.13904 1.08203 8.35779V9.35779C1.08203 9.57654 1.23828 9.73279 1.45703 9.73279H11.082V11.9515C11.082 12.2953 11.457 12.4515 11.707 12.2015Z"/>
+              </svg>
+            </span>
+            <span>Академия</span>
+          </nav>
+          <div class="academy-intro__content">
+            <h1 class="academy-intro__title">Академия STARTVOLT</h1>
+            <p class="academy-intro__lead">Профессиональное обучение для автомехаников и специалистов СТО</p>
+          </div>
+          <ul class="academy-intro__tags" aria-label="Направления обучения">
+            <li>Повышение квалификации</li>
+            <li>Отработка практических навыков</li>
+            <li>Выездные семинары</li>
+            <li>Обучающая библиотека</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="academy-program" aria-labelledby="academy-program-title">
+        <div class="container">
+          <p class="academy-section-label">[ О программе ]</p>
+          <h2 class="academy-heading" id="academy-program-title">Академия STARTVOLT разработала обучающую программу, включающую <span>теорию и практику:</span></h2>
+          <ul class="academy-program__cards">
+            <li>
+              <a class="academy-program-card" href="#events">
+                <img src="assets/img/academy-program/1.webp" alt="">
+                <h3>Электронные системы современного ДВС</h3>
+              </a>
+            </li>
+            <li>
+              <a class="academy-program-card" href="#events">
+                <img src="assets/img/academy-program/2.webp" alt="">
+                <h3>Работа с современными инструментами и методами тестирования</h3>
+              </a>
+            </li>
+            <li>
+              <a class="academy-program-card" href="#events">
+                <img src="assets/img/academy-program/3.webp" alt="">
+                <h3>Практические решения для реальных задач на СТО</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="academy-formats" aria-labelledby="academy-formats-title">
+        <div class="container academy-formats__inner">
+          <div class="academy-formats__copy">
+            <p class="academy-section-label">[ Форматы обучения ]</p>
+            <h2 class="academy-heading" id="academy-formats-title">Обучение в двух форматах: <span>онлайн и оффлайн</span></h2>
+            <p class="academy-formats__text">В онлайн формате доступна библиотека видеолекций и методических материалов для самостоятельного обучения.<br><br>Семинары проходят офлайн в городах страны, участие подтверждается сертификатом о повышении квалификации.</p>
+          </div>
+          <div class="academy-format-cards">
+            <a class="academy-format-card" href="#events">
+              <span class="academy-format-card__tag">Онлайн</span>
+              <img class="academy-format-card__bolt" src="assets/img/lightning.svg" alt="">
+              <span class="academy-format-card__body">
+                <strong>Обучающая библиотека</strong>
+                <span>Видеолекции и записи семинаров, статьи и методические материалы<span class="academy-mobile-hidden">, фотоотчеты и новости мероприятий</span></span>
+              </span>
+              <span class="academy-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.4567 0C14.7599 0 15.0507 0.120455 15.2651 0.334865C15.4795 0.549275 15.6 0.840078 15.6 1.1433V10.2897C15.6 10.5929 15.4795 10.8837 15.2651 11.0981C15.0507 11.3125 14.7599 11.433 14.4567 11.433C14.1535 11.433 13.8627 11.3125 13.6483 11.0981C13.4339 10.8837 13.3134 10.5929 13.3134 10.2897V3.90323L1.93756 15.2791C1.72194 15.4873 1.43313 15.6026 1.13337 15.6C0.833596 15.5974 0.546842 15.4771 0.334865 15.2651C0.122888 15.0532 0.00264814 14.7664 4.32198e-05 14.4666C-0.0025617 14.1669 0.112676 13.8781 0.320938 13.6624L11.6968 2.2866H5.3103C5.00708 2.2866 4.71628 2.16615 4.50186 1.95174C4.28745 1.73732 4.167 1.44652 4.167 1.1433C4.167 0.840078 4.28745 0.549275 4.50186 0.334865C4.71628 0.120455 5.00708 0 5.3103 0H14.4567Z"/>
+                </svg>
+              </span>
+            </a>
+            <a class="academy-format-card" href="#events">
+              <span class="academy-format-card__tag">Оффлайн</span>
+              <img class="academy-format-card__bolt" src="assets/img/lightning.svg" alt="">
+              <span class="academy-format-card__body">
+                <strong>Выездные семинары</strong>
+                <span>Проходят в оборудованных залах с использованием учебного автомобиля</span>
+              </span>
+              <span class="academy-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.4567 0C14.7599 0 15.0507 0.120455 15.2651 0.334865C15.4795 0.549275 15.6 0.840078 15.6 1.1433V10.2897C15.6 10.5929 15.4795 10.8837 15.2651 11.0981C15.0507 11.3125 14.7599 11.433 14.4567 11.433C14.1535 11.433 13.8627 11.3125 13.6483 11.0981C13.4339 10.8837 13.3134 10.5929 13.3134 10.2897V3.90323L1.93756 15.2791C1.72194 15.4873 1.43313 15.6026 1.13337 15.6C0.833596 15.5974 0.546842 15.4771 0.334865 15.2651C0.122888 15.0532 0.00264814 14.7664 4.32198e-05 14.4666C-0.0025617 14.1669 0.112676 13.8781 0.320938 13.6624L11.6968 2.2866H5.3103C5.00708 2.2866 4.71628 2.16615 4.50186 1.95174C4.28745 1.73732 4.167 1.44652 4.167 1.1433C4.167 0.840078 4.28745 0.549275 4.50186 0.334865C4.71628 0.120455 5.00708 0 5.3103 0H14.4567Z"/>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="starter-section">
-        <div class="container starter-grid">
-          <div>
-            <p class="starter-kicker">Базовый блок</p>
-            <h2 class="starter-heading">Контент можно менять прямо в этом файле.</h2>
-          </div>
-          <div>
-            <p class="starter-text">Страница не зависит от Bitrix: все локальные ассеты лежат рядом, ссылки в навигации ведут на действующий сайт, а стили вынесены в отдельный CSS-файл.</p>
-            <ul class="starter-list">
-              <li>Подключены Franklin Gothic Book, Medium Cond, Demi Cond, Bold и FranklinCTT.</li>
-              <li>Сохранены фирменные цвета, размеры контейнера, плотная uppercase-навигация и темный футер.</li>
-              <li>Мобильное меню открывается без внешних библиотек.</li>
-            </ul>
+      <section class="academy-approach" aria-labelledby="academy-approach-title">
+        <picture class="academy-approach__picture" aria-hidden="true">
+          <source media="(max-width: 767px)" srcset="assets/img/academy-approach/bg-mobile.webp">
+          <img src="assets/img/academy-approach/bg.webp" alt="">
+        </picture>
+        <div class="container academy-approach__inner">
+          <div class="academy-approach__copy">
+            <p class="academy-section-label">[ Программа обучения ]</p>
+            <h2 class="academy-heading academy-heading--light" id="academy-approach-title"><span>Профессиональный подход</span> к электронным системам современного ДВС</h2>
+            <p>Лекции и семинары проходят в оборудованных залах с использованием учебного автомобиля STARTVOLT в группах по 15-20 человек.<br><br>Участники получают именной сертификат подтверждающий повышение квалификации.</p>
           </div>
         </div>
       </section>
 
-      <section class="starter-section starter-section--muted">
-        <div class="container starter-grid">
-          <div>
-            <p class="starter-kicker">Следующий шаг</p>
-            <h2 class="starter-heading">Здесь удобно верстать нужный раздел.</h2>
+      <section class="academy-events" id="events" aria-labelledby="academy-events-title">
+        <div class="container">
+          <div class="academy-events__head">
+            <div>
+              <p class="academy-section-label">[ Расписание мероприятий ]</p>
+              <h2 class="academy-heading" id="academy-events-title">Выездные семинары</h2>
+            </div>
+            <p class="academy-events__note">Оставьте заявку на интересующее событие, с вами свяжется региональный представитель STARTVOLT в вашем городе</p>
           </div>
-          <p class="starter-text">Можно заменить hero, добавить каталожные блоки, форму, таблицу или любой промо-раздел, сохранив общий визуальный язык StartVolt.</p>
+
+          <div class="academy-events__tabs" role="tablist" aria-label="Месяцы мероприятий">
+            <button class="academy-events__tab is-active" type="button" role="tab" aria-selected="true" data-events-tab="all">Все</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="current">В этом месяце</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="may">Май</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="june">Июнь</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="july">Июль</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="august">Август</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="september">Сентябрь</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="october">Октябрь</button>
+          </div>
+
+          <div class="academy-events__panel is-active" data-events-panel="all">
+            <div class="academy-events__slider swiper">
+              <div class="academy-events__grid swiper-wrapper">
+                <article class="academy-event-card swiper-slide" data-event-month="may current">
+                  <img src="assets/img/academy-events/event-01.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-05-13">13-15.05.26</time>
+                    <h3>г. Нижний Новгород</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                  </div>
+                </article>
+                <article class="academy-event-card swiper-slide" data-event-month="may current">
+                  <img src="assets/img/academy-events/event-02.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-05-18">18-20.05.26</time>
+                    <h3>г. Казань</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                  </div>
+                </article>
+                <article class="academy-event-card swiper-slide" data-event-month="may current">
+                  <img src="assets/img/academy-events/event-03.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-05-25">25-27.05.26</time>
+                    <h3>г. Самара</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                  </div>
+                </article>
+                <article class="academy-event-card swiper-slide" data-event-month="june">
+                  <img src="assets/img/academy-events/event-04.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-06-17">17-19.06.26</time>
+                    <h3>г. Уфа</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                  </div>
+                </article>
+                <article class="academy-event-card swiper-slide" data-event-month="june">
+                  <img src="assets/img/academy-events/event-05.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-06-22">22-24.06.26</time>
+                    <h3>г. Пермь</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="june">
+                  <img src="assets/img/academy-events/event-06.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-06-26">26-30.06.26</time>
+                    <h3>г. Екатеринбург</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация ожидается</a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="june">
+                  <img src="assets/img/academy-events/event-07.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-06-26">26-30.06.26</time>
+                    <h3>г. Екатеринбург</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация ожидается</a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="july">
+                  <img src="assets/img/academy-events/event-08.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-07-02">02-06.07.26</time>
+                    <h3>г. Челябинск</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация ожидается</a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="july">
+                  <img src="assets/img/academy-events/event-09.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-07-20">20-22.07.26</time>
+                    <h3>г. Омск</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация ожидается</a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="july">
+                  <img src="assets/img/academy-events/event-10.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-07-27">27-29.07.26</time>
+                    <h3>г. Новосибирск</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация ожидается</a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="august">
+                  <img src="assets/img/academy-events/event-11.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-08-03">03-05.08.26</time>
+                    <h3>г. Красноярск</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация ожидается</a>
+                  </div>
+                </article>
+                <article class="academy-event-card academy-event-card--past swiper-slide" data-event-month="past">
+                  <img src="assets/img/academy-events/event-12.webp" alt="">
+                  <div class="academy-event-card__content">
+                    <time datetime="2026-03-03">03-05.03.26</time>
+                    <h3>г. Воронеж</h3>
+                    <span class="academy-event-card__button">Завершено</span>
+                  </div>
+                </article>
+              </div>
+              <div class="academy-events__pagination swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -161,6 +413,8 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/startvolt.js"></script>
+    <script src="assets/js/academy.js"></script>
   </body>
 </html>

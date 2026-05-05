@@ -100,15 +100,16 @@
   text-transform: uppercase;
 }
 
-.academy-heading span {
+.academy-heading b {
   color: #9a9a9a;
+  font-weight: inherit;
 }
 
 .academy-heading--light {
   color: #fff;
 }
 
-.academy-heading--light span {
+.academy-heading--light b {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -311,11 +312,17 @@
 }
 
 .academy-formats__text {
+  display: grid;
+  gap: 2.4rem;
   max-width: 51.1rem;
   margin: auto 0 0;
   color: #343434;
   font-size: 1.8rem;
   line-height: 1.3;
+}
+
+.academy-formats__text p {
+  margin: 0;
 }
 
 .academy-format-cards {
@@ -397,13 +404,15 @@
   padding-right: 0.4rem;
 }
 
-.academy-format-card__body strong {
+.academy-format-card__title {
+  margin: 0;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 1.5;
 }
 
-.academy-format-card__body span {
+.academy-format-card__text {
+  margin: 0;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.6rem;
   line-height: 1.12;
@@ -469,15 +478,20 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.academy-approach__copy p:last-child {
+.academy-approach__text {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: grid;
+  gap: 2.4rem;
   max-width: 56.3rem;
-  margin: 0;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.8rem;
   line-height: 1.4;
+}
+
+.academy-approach__text p {
+  margin: 0;
 }
 
 .academy-events {
@@ -835,11 +849,8 @@
 
   .academy-formats__text {
     margin-top: 2.4rem;
+    gap: 1.8rem;
     line-height: 1;
-  }
-
-  .academy-formats__text br {
-    display: none;
   }
 
   .academy-mobile-hidden {
@@ -878,8 +889,9 @@
     justify-content: flex-start;
   }
 
-  .academy-approach__copy p:last-child {
+  .academy-approach__text {
     position: static;
+    gap: 1.8rem;
     max-width: 35rem;
     margin-top: 3.2rem;
     font-size: 1.6rem;

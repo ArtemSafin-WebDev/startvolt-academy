@@ -212,10 +212,10 @@
           <div class="academy-formats__copy">
             <p class="academy-section-label">[ Форматы обучения ]</p>
             <h2 class="academy-heading" id="academy-formats-title">Обучение в двух форматах: <b>онлайн и оффлайн</b></h2>
-            <div class="academy-formats__text">
-              <p>В онлайн формате доступна библиотека видеолекций и методических материалов для самостоятельного обучения.</p>
-              <p>Семинары проходят офлайн в городах страны, участие подтверждается сертификатом о повышении квалификации.</p>
-            </div>
+          </div>
+          <div class="academy-formats__text">
+            <p>В онлайн формате доступна библиотека видеолекций и методических материалов для самостоятельного обучения.</p>
+            <p>Семинары проходят офлайн в городах страны, участие подтверждается сертификатом о повышении квалификации.</p>
           </div>
           <div class="academy-format-cards">
             <a class="academy-format-card" href="#events">
@@ -276,142 +276,382 @@
           </div>
 
           <div class="academy-events__tabs" role="tablist" aria-label="Месяцы мероприятий">
-            <button class="academy-events__tab is-active" type="button" role="tab" aria-selected="true" data-events-tab="all">Все</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="current">В этом месяце</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="may">Май</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="june">Июнь</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="july">Июль</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="august">Август</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="september">Сентябрь</button>
-            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="october">Октябрь</button>
+            <button class="academy-events__tab is-active" type="button" role="tab" aria-selected="true" data-events-tab="all" aria-controls="academy-events-panel-all">Все</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="current" aria-controls="academy-events-panel-current">В этом месяце</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="may" aria-controls="academy-events-panel-may">Май</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="june" aria-controls="academy-events-panel-june">Июнь</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="july" aria-controls="academy-events-panel-july">Июль</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="august" aria-controls="academy-events-panel-august">Август</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="september" aria-controls="academy-events-panel-september">Сентябрь</button>
+            <button class="academy-events__tab" type="button" role="tab" aria-selected="false" data-events-tab="october" aria-controls="academy-events-panel-october">Октябрь</button>
           </div>
 
-          <div class="academy-events__panel is-active" data-events-panel="all">
+          <div class="academy-events__panel is-active" data-events-panel="all" id="academy-events-panel-all" role="tabpanel">
             <div class="academy-events__slider swiper">
               <div class="academy-events__grid swiper-wrapper">
-                <article class="academy-event-card swiper-slide" data-event-month="may current">
-                  <div class="academy-event-card__media">
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/1.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-05-13">13-15.05.26</time>
                     <h3>г. Нижний Новгород</h3>
                     <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
-                  </div>
-                </article>
-                <article class="academy-event-card swiper-slide" data-event-month="may current">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/2.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-05-18">18-20.05.26</time>
                     <h3>г. Казань</h3>
                     <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
-                  </div>
-                </article>
-                <article class="academy-event-card swiper-slide" data-event-month="may current">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/3.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-05-25">25-27.05.26</time>
                     <h3>г. Самара</h3>
                     <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
-                  </div>
-                </article>
-                <article class="academy-event-card swiper-slide" data-event-month="june">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/4.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-06-17">17-19.06.26</time>
                     <h3>г. Уфа</h3>
                     <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
-                  </div>
-                </article>
-                <article class="academy-event-card swiper-slide" data-event-month="june">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/5.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-06-22">22-24.06.26</time>
                     <h3>г. Пермь</h3>
                     <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="june">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/6.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-06-26">26-30.06.26</time>
                     <h3>г. Екатеринбург</h3>
                     <span class="academy-event-card__button">Регистрация ожидается</span>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="june">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/7.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-06-26">26-30.06.26</time>
                     <h3>г. Екатеринбург</h3>
                     <span class="academy-event-card__button">Регистрация ожидается</span>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="july">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/8.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-07-02">02-06.07.26</time>
                     <h3>г. Челябинск</h3>
                     <span class="academy-event-card__button">Регистрация ожидается</span>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="july">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/9.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-07-20">20-22.07.26</time>
                     <h3>г. Омск</h3>
                     <span class="academy-event-card__button">Регистрация ожидается</span>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="july">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/10.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-07-27">27-29.07.26</time>
                     <h3>г. Новосибирск</h3>
                     <span class="academy-event-card__button">Регистрация ожидается</span>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--waiting swiper-slide" data-event-month="august">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/11.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-08-03">03-05.08.26</time>
                     <h3>г. Красноярск</h3>
                     <span class="academy-event-card__button">Регистрация ожидается</span>
-                  </div>
-                </article>
-                <article class="academy-event-card academy-event-card--past swiper-slide" data-event-month="past">
-                  <div class="academy-event-card__media">
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--past">
+                    <div class="academy-event-card__media">
                     <img src="assets/img/academy-events/11.webp" alt="">
-                  </div>
-                  <div class="academy-event-card__content">
+                    </div>
+                    <div class="academy-event-card__content">
                     <time datetime="2026-03-03">03-05.03.26</time>
                     <h3>г. Воронеж</h3>
                     <span class="academy-event-card__button">Завершено</span>
-                  </div>
-                </article>
+                    </div>
+                  </article>
+                </div>
               </div>
               <div class="academy-events__pagination swiper-pagination"></div>
             </div>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="current" id="academy-events-panel-current" role="tabpanel" hidden>
+            <div class="academy-events__slider swiper">
+              <div class="academy-events__grid swiper-wrapper">
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/1.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-05-13">13-15.05.26</time>
+                    <h3>г. Нижний Новгород</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/2.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-05-18">18-20.05.26</time>
+                    <h3>г. Казань</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/3.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-05-25">25-27.05.26</time>
+                    <h3>г. Самара</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="academy-events__pagination swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="may" id="academy-events-panel-may" role="tabpanel" hidden>
+            <div class="academy-events__slider swiper">
+              <div class="academy-events__grid swiper-wrapper">
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/1.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-05-13">13-15.05.26</time>
+                    <h3>г. Нижний Новгород</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/2.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-05-18">18-20.05.26</time>
+                    <h3>г. Казань</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/3.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-05-25">25-27.05.26</time>
+                    <h3>г. Самара</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="academy-events__pagination swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="june" id="academy-events-panel-june" role="tabpanel" hidden>
+            <div class="academy-events__slider swiper">
+              <div class="academy-events__grid swiper-wrapper">
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/4.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-06-17">17-19.06.26</time>
+                    <h3>г. Уфа</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/5.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-06-22">22-24.06.26</time>
+                    <h3>г. Пермь</h3>
+                    <a class="academy-event-card__button" href="#">Регистрация<svg class="academy-event-card__button-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false"><path d="M1.23657 4.71753e-05C1.03993 4.71753e-05 0.882617 0.15736 0.902282 0.334337V1.1209C0.882618 1.29788 1.03993 1.45519 1.23657 1.45519L4.99242 1.3962L0.0960518 6.29257C-0.021933 6.41055 -0.0415969 6.62686 0.096052 6.76451L0.646648 7.3151C0.764632 7.43309 1.0006 7.43309 1.11859 7.3151L6.01496 2.41874L5.9363 6.15492C5.9363 6.35156 6.09361 6.50888 6.27059 6.48921H7.05716C7.23413 6.50888 7.39145 6.35156 7.39145 6.15492L7.39145 0.334337C7.39145 0.137696 7.2538 4.71753e-05 7.05716 4.71753e-05H1.23657Z" /></svg></a>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/6.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-06-26">26-30.06.26</time>
+                    <h3>г. Екатеринбург</h3>
+                    <span class="academy-event-card__button">Регистрация ожидается</span>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/7.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-06-26">26-30.06.26</time>
+                    <h3>г. Екатеринбург</h3>
+                    <span class="academy-event-card__button">Регистрация ожидается</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="academy-events__pagination swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="july" id="academy-events-panel-july" role="tabpanel" hidden>
+            <div class="academy-events__slider swiper">
+              <div class="academy-events__grid swiper-wrapper">
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/8.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-07-02">02-06.07.26</time>
+                    <h3>г. Челябинск</h3>
+                    <span class="academy-event-card__button">Регистрация ожидается</span>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/9.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-07-20">20-22.07.26</time>
+                    <h3>г. Омск</h3>
+                    <span class="academy-event-card__button">Регистрация ожидается</span>
+                    </div>
+                  </article>
+                </div>
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/10.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-07-27">27-29.07.26</time>
+                    <h3>г. Новосибирск</h3>
+                    <span class="academy-event-card__button">Регистрация ожидается</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="academy-events__pagination swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="august" id="academy-events-panel-august" role="tabpanel" hidden>
+            <div class="academy-events__slider swiper">
+              <div class="academy-events__grid swiper-wrapper">
+                <div class="academy-events__slide swiper-slide">
+                  <article class="academy-event-card academy-event-card--waiting">
+                    <div class="academy-event-card__media">
+                    <img src="assets/img/academy-events/11.webp" alt="">
+                    </div>
+                    <div class="academy-event-card__content">
+                    <time datetime="2026-08-03">03-05.08.26</time>
+                    <h3>г. Красноярск</h3>
+                    <span class="academy-event-card__button">Регистрация ожидается</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="academy-events__pagination swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="september" id="academy-events-panel-september" role="tabpanel" hidden>
+            <p class="academy-events__empty is-visible">На выбранный период мероприятия пока не запланированы.</p>
+          </div>
+
+          <div class="academy-events__panel" data-events-panel="october" id="academy-events-panel-october" role="tabpanel" hidden>
+            <p class="academy-events__empty is-visible">На выбранный период мероприятия пока не запланированы.</p>
           </div>
         </div>
       </section>

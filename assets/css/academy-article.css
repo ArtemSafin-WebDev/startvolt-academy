@@ -236,6 +236,11 @@ body.academy-article-body .page-header__row {
   height: 100%;
   max-width: none;
   object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.academy-video-content .academy-video-player:hover img {
+  transform: scale(1.06);
 }
 
 .academy-video-player::after {

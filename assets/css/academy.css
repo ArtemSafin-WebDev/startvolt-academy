@@ -301,14 +301,19 @@
 .academy-formats__inner {
   display: grid;
   grid-template-columns: minmax(0, 65.1rem) minmax(0, 67.6rem);
-  gap: 3.3rem;
-  align-items: end;
+  grid-template-areas:
+    "copy cards"
+    "text cards";
+  grid-template-rows: auto 1fr;
+  column-gap: 3.3rem;
+  row-gap: 2.4rem;
+  align-items: start;
+  height: 50.9rem;
 }
 
 .academy-formats__copy {
-  min-height: 50.9rem;
-  display: flex;
-  flex-direction: column;
+  grid-area: copy;
+  align-self: start;
 }
 
 .academy-formats__copy .academy-heading {
@@ -316,10 +321,11 @@
 }
 
 .academy-formats__text {
+  grid-area: text;
+  align-self: end;
   display: grid;
   gap: 2.4rem;
   max-width: 51.1rem;
-  margin: auto 0 0;
   color: #343434;
   font-size: 1.8rem;
   line-height: 1.3;
@@ -330,6 +336,8 @@
 }
 
 .academy-format-cards {
+  grid-area: cards;
+  align-self: end;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 33.4rem));
   gap: 0.8rem;
@@ -339,7 +347,7 @@
 .academy-format-card {
   position: relative;
   display: flex;
-  min-height: 36.4rem;
+  height: 36.4rem;
   overflow: hidden;
   padding: 2.4rem;
   color: #fff;
@@ -550,7 +558,12 @@
 }
 
 .academy-events__panel {
+  display: none;
   margin-top: 2.4rem;
+}
+
+.academy-events__panel.is-active {
+  display: block;
 }
 
 .academy-events__grid {
@@ -563,17 +576,21 @@
   box-sizing: border-box;
 }
 
+.academy-events__slide {
+  display: flex;
+  min-width: 0;
+  height: auto;
+}
+
 .academy-event-card {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   background: #f9f9f9;
   border-radius: 0.14rem;
-}
-
-.academy-event-card.is-hidden {
-  display: none;
 }
 
 .academy-event-card__media {
@@ -826,13 +843,22 @@
   }
 
   .academy-formats__inner {
-    gap: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "text"
+      "cards";
+    grid-template-rows: auto;
+    row-gap: 2.4rem;
+    align-items: start;
+    height: auto;
   }
 
   .academy-formats__text {
-    margin-top: 2.4rem;
-    gap: 1.8rem;
-    line-height: 1;
+    align-self: start;
+    gap: 0;
+    font-size: 1.6rem;
+    line-height: 1.1;
   }
 
   .academy-mobile-hidden {
@@ -842,10 +868,11 @@
   .academy-format-cards {
     grid-template-columns: 1fr;
     gap: 0.4rem;
+    margin-top: 1.6rem;
   }
 
   .academy-format-card {
-    min-height: 32.1rem;
+    height: 32.1rem;
   }
 
   .academy-format-card__body {
@@ -940,10 +967,6 @@
     min-height: 35.9rem;
   }
 
-  .academy-event-card.is-hidden {
-    display: none;
-  }
-
   .academy-event-card__content {
     gap: 2.1rem;
     padding: 1.8rem;
@@ -991,6 +1014,11 @@
 
   .academy-heading {
     font-size: 3.4rem;
+  }
+
+  .academy-formats .academy-heading {
+    font-size: 3.7rem;
+    line-height: 3.6rem;
   }
 
   .academy-program-card h3 {

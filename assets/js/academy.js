@@ -2,16 +2,54 @@ const eventsRoot = document.querySelector(".academy-events");
 
 if (eventsRoot) {
   const tabs = Array.from(eventsRoot.querySelectorAll("[data-events-tab]"));
-  const cards = Array.from(eventsRoot.querySelectorAll(".academy-event-card"));
-  const sliderEl = eventsRoot.querySelector(".academy-events__slider");
-  let eventsSwiper = null;
-
-  const emptyMessage = document.createElement("p");
-  emptyMessage.className = "academy-events__empty";
-  emptyMessage.textContent = "На выбранный период мероприятия пока не запланированы.";
-  sliderEl?.after(emptyMessage);
+  const panels = Array.from(eventsRoot.querySelectorAll("[data-events-panel]"));
+  const eventSwipers = new Map();
 
   const isMobile = () => window.matchMedia("(max-width: 900px)").matches;
+
+  const destroySwipers = () => {
+    eventSwipers.forEach((swiper) => {
+      swiper.destroy(true, true);
+    });
+    eventSwipers.clear();
+  };
+
+  const setupSwiper = () => {
+    if (typeof Swiper === "undefined") return;
+
+    if (!isMobile()) {
+      destroySwipers();
+      return;
+    }
+
+    const activePanel = eventsRoot.querySelector(".academy-events__panel.is-active");
+    const sliderEl = activePanel?.querySelector(".academy-events__slider");
+    if (!sliderEl) return;
+
+    if (!eventSwipers.has(sliderEl)) {
+      eventSwipers.set(
+        sliderEl,
+        new Swiper(sliderEl, {
+          slidesPerView: 1.18,
+          spaceBetween: 8,
+          watchOverflow: true,
+          pagination: {
+            el: sliderEl.querySelector(".academy-events__pagination"),
+            clickable: true,
+          },
+          breakpoints: {
+            560: {
+              slidesPerView: 2,
+            },
+          },
+        }),
+      );
+    }
+
+    const swiper = eventSwipers.get(sliderEl);
+    swiper.update();
+    swiper.slideTo(0, 0);
+  };
 
   const setTab = (tabName) => {
     tabs.forEach((tab) => {
@@ -20,47 +58,13 @@ if (eventsRoot) {
       tab.setAttribute("aria-selected", String(isActive));
     });
 
-    let visibleCount = 0;
-
-    cards.forEach((card) => {
-      const cardMonths = (card.dataset.eventMonth || "").split(" ");
-      const isVisible = tabName === "all" || cardMonths.includes(tabName);
-      card.classList.toggle("is-hidden", !isVisible);
-      if (isVisible) visibleCount += 1;
+    panels.forEach((panel) => {
+      const isActive = panel.dataset.eventsPanel === tabName;
+      panel.classList.toggle("is-active", isActive);
+      panel.hidden = !isActive;
     });
 
-    emptyMessage.classList.toggle("is-visible", visibleCount === 0);
-
-    if (eventsSwiper) {
-      eventsSwiper.update();
-      eventsSwiper.slideTo(0, 0);
-    }
-  };
-
-  const setupSwiper = () => {
-    if (!sliderEl || typeof Swiper === "undefined") return;
-
-    if (isMobile() && !eventsSwiper) {
-      eventsSwiper = new Swiper(sliderEl, {
-        slidesPerView: 1.18,
-        spaceBetween: 8,
-        watchOverflow: true,
-        pagination: {
-          el: ".academy-events__pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          560: {
-            slidesPerView: 2,
-          },
-        },
-      });
-    }
-
-    if (!isMobile() && eventsSwiper) {
-      eventsSwiper.destroy(true, true);
-      eventsSwiper = null;
-    }
+    setupSwiper();
   };
 
   tabs.forEach((tab) => {
@@ -70,6 +74,5 @@ if (eventsRoot) {
   });
 
   setupSwiper();
-  setTab("all");
   window.addEventListener("resize", setupSwiper);
 }

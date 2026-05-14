@@ -341,28 +341,6 @@ body.academy-library-body .page-header__row {
     padding-bottom: 2.4rem;
   }
 
-  .breadcrumbs {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 0.8rem;
-    overflow: hidden;
-    margin-bottom: 2.4rem;
-    white-space: nowrap;
-  }
-
-  .breadcrumbs svg {
-    display: block;
-    flex: 0 0 auto;
-    margin: 0;
-  }
-
-  .breadcrumbs__link {
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   .academy-library__title {
     font-size: 4rem;
     line-height: 1;

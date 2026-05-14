@@ -766,6 +766,32 @@
     font-size: 1.6rem;
   }
 
+  .academy-page .breadcrumbs,
+  .academy-article-page .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.8rem;
+    row-gap: 0.8rem;
+    overflow: visible;
+    margin-bottom: 2.4rem;
+    white-space: normal;
+  }
+
+  .academy-page .breadcrumbs svg,
+  .academy-article-page .breadcrumbs svg {
+    display: block;
+    flex: 0 0 auto;
+    margin: 0;
+  }
+
+  .academy-page .breadcrumbs__link,
+  .academy-article-page .breadcrumbs__link {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
   .academy-heading {
     font-size: 4rem;
     line-height: 1;

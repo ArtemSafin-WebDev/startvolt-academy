@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/css/academy.css">
   </head>
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true" focusable="false">
+      <symbol viewBox="0 0 13.84 6.94" id="breadcrumbs-arrow"><path d="M10.63 6.82l3.09-3.09a.36.36 0 000-.54L10.63.1a.37.37 0 00-.63.28V2.6H.38A.37.37 0 000 3v1a.37.37 0 00.38.37H10v2.2a.36.36 0 00.63.25z"/></symbol>
+    </svg>
     <aside class="academy-top-panel" aria-label="Фирменный магазин Carville">
       <div class="container academy-top-panel__inner">
         <img class="academy-top-panel__logo" src="assets/img/academy-top-panel/carville.svg" width="38" height="38" alt="Carville">
@@ -149,15 +152,21 @@
           <img src="assets/img/academy-intro/bg.webp" alt="">
         </picture>
         <div class="container academy-intro__inner">
-          <nav class="academy-breadcrumbs" aria-label="Хлебные крошки">
-            <a href="https://startvolt.com/">Главная</a>
-            <span class="academy-breadcrumbs__separator" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17">
-                <path d="M11.707 12.2015L14.8008 9.10779C14.957 8.98279 14.957 8.73279 14.8008 8.57654L11.707 5.48279C11.457 5.26404 11.082 5.42029 11.082 5.76404V7.98279H1.45703C1.23828 7.98279 1.08203 8.13904 1.08203 8.35779V9.35779C1.08203 9.57654 1.23828 9.73279 1.45703 9.73279H11.082V11.9515C11.082 12.2953 11.457 12.4515 11.707 12.2015Z"/>
-              </svg>
+          <div id="breadcrumbs" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <span class="breadcrumbs__link" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="https://startvolt.com/" title="Главная" itemprop="item">
+                <span itemprop="name">Главная</span>
+              </a>
+              <meta itemprop="position" content="1">
             </span>
-            <span>Академия</span>
-          </nav>
+            <svg width="14" height="14" aria-hidden="true" class="icon-breadcrumbs-arrow">
+              <use xlink:href="#breadcrumbs-arrow"></use>
+            </svg>
+            <span class="breadcrumbs__link active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemscope itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name">Академия</span></span>
+              <meta itemprop="position" content="2">
+            </span>
+          </div>
           <div class="academy-intro__content">
             <h1 class="academy-intro__title">Академия STARTVOLT</h1>
             <p class="academy-intro__lead">Профессиональное обучение для автомехаников и специалистов СТО</p>

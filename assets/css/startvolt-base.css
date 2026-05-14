@@ -65,6 +65,43 @@
 html {
   font-size: 10px;
   min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  html {
+    font-size: 9px;
+  }
 }
 
 body {
@@ -109,6 +146,41 @@ button {
   margin: 0 auto;
   padding-right: var(--content-padding);
   padding-left: var(--content-padding);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.breadcrumbs:last-child {
+  margin-bottom: 0;
+}
+
+.breadcrumbs svg {
+  flex-shrink: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0.3rem 2rem 0;
+  fill: #9a9a9a;
+}
+
+.breadcrumbs__link {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.breadcrumbs__link.active {
+  color: #9a9a9a;
+  pointer-events: none;
+}
+
+.breadcrumbs__link:not(.active):hover {
+  color: var(--primary-color);
 }
 
 .page-header {
@@ -633,6 +705,20 @@ button {
   .cart-button {
     justify-self: start;
     margin: 0;
+  }
+
+  .breadcrumbs {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 3.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .breadcrumbs svg {
+    display: inline-block;
+    margin: 0 1.5rem 0.1rem;
+    vertical-align: bottom;
   }
 
   .starter-hero__inner {

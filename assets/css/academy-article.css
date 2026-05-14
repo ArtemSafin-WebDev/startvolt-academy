@@ -676,13 +676,26 @@ body.academy-article-body .page-header__row {
     margin-top: 2.4rem;
   }
 
+  .academy-article-date {
+    line-height: 1.1;
+  }
+
+  .academy-article-tags span {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .academy-article-tags span:nth-child(n + 2) {
     display: inline-flex;
   }
 
   .academy-article-video-download {
     width: 100%;
-    margin-top: 1.6rem;
+    height: 3.6rem;
+    min-height: 0;
+    margin-top: 2.4rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
 
   .academy-article-main {
@@ -742,7 +755,12 @@ body.academy-article-body .page-header__row {
   }
 
   .academy-video-content .academy-video-player {
-    aspect-ratio: 350 / 267;
+    aspect-ratio: 350 / 413;
+  }
+
+  .academy-video-player__button {
+    width: 6.2rem;
+    height: 6.2rem;
   }
 
   .academy-video-content .academy-video-chapter h3 {

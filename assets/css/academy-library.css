@@ -341,7 +341,7 @@ body.academy-library-body .page-header__row {
     padding-bottom: 2.4rem;
   }
 
-  .academy-library .breadcrumbs {
+  .breadcrumbs {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -351,13 +351,13 @@ body.academy-library-body .page-header__row {
     white-space: nowrap;
   }
 
-  .academy-library .breadcrumbs svg {
+  .breadcrumbs svg {
     display: block;
     flex: 0 0 auto;
     margin: 0;
   }
 
-  .academy-library .breadcrumbs__link {
+  .breadcrumbs__link {
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;

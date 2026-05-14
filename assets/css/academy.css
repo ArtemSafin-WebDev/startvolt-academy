@@ -53,7 +53,6 @@
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  min-height: 4rem;
   padding: 1.1rem 1.6rem;
   color: #fff;
   background: #1a1919;
@@ -545,8 +544,7 @@
 }
 
 .academy-events__tab {
-  min-height: 3.5rem;
-  padding: 0.2rem 1.6rem;
+  padding: 0.9rem 1.6rem;
   color: #000;
   background: #f9f9f9;
   border-radius: 0.2rem;
@@ -1042,7 +1040,8 @@
   }
 
   .academy-event-card__button {
-    min-height: 4.7rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
     font-size: 1.9rem;
   }
 

@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/startvolt-base.css">
     <link rel="stylesheet" href="assets/css/academy.css">
+    <link rel="stylesheet" href="assets/css/startvolt-header.css">
     <link rel="stylesheet" href="assets/css/academy-article.css">
   </head>
   <body class="academy-article-body">
@@ -33,117 +34,153 @@
       </div>
     </aside>
 
-    <header class="page-header">
+    <header class="sv-header">
       <div class="container">
-        <div class="page-header__row">
-          <nav class="page-header__links" aria-label="Основная навигация">
-            <a class="page-header__link" href="https://startvolt.com/about/">О компании</a>
-            <a class="page-header__link" href="https://startvolt.com/garantiya/">Гарантия</a>
-            <a class="page-header__link" href="https://startvolt.com/where-buy/">Точки продаж</a>
-            <a class="page-header__link" href="https://startvolt.com/news/">Новости</a>
-            <a class="page-header__link" href="https://startvolt.com/contacts/">Контакты</a>
+        <div class="sv-header__row">
+          <nav class="sv-header__links" aria-label="Основная навигация">
+            <a class="sv-header__link" href="https://startvolt.com/about/">О компании</a>
+            <a class="sv-header__link" href="https://startvolt.com/garantiya/">Гарантия</a>
+            <a class="sv-header__link" href="https://startvolt.com/where-buy/">Точки продаж</a>
+            <a class="sv-header__link" href="https://startvolt.com/news/">Новости</a>
+            <a class="sv-header__link" href="https://startvolt.com/contacts/">Контакты</a>
           </nav>
 
-          <a href="https://startvolt.com/" class="page-header__logo" aria-label="STARTVOLT">
-            <img src="assets/img/logo.svg" width="74" height="40" alt="" class="page-header__logo-image">
+          <a href="https://startvolt.com/" class="sv-header__logo" aria-label="STARTVOLT">
+            <img src="assets/img/logo.svg" width="74" height="40" alt="" class="sv-header__logo-image">
           </a>
 
-          <div class="page-header__links page-header__links--right">
-            <a class="page-header__link header-icon-link" href="https://startvolt.com/calendar/">
-              <svg viewBox="0 0 16 16" aria-hidden="true">
-                <path d="M5 0a1 1 0 0 1 1 1v1h4V1a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 16 4.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 13.5v-9A2.5 2.5 0 0 1 2.5 2H4V1a1 1 0 0 1 1-1Zm9 6H2v7.5c0 .28.22.5.5.5h11a.5.5 0 0 0 .5-.5V6ZM2.5 4a.5.5 0 0 0-.5.5V5h12v-.5a.5.5 0 0 0-.5-.5h-11Z"/>
-              </svg>
-              <span class="header-icon-link__text">Календарь</span>
-            </a>
-            <a class="page-header__link header-icon-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">
+          <div class="sv-header__links sv-header__links--right">
+            <div class="sv-header__academy">
+              <a class="sv-header__link sv-header__link--academy sv-header-icon-link" href="https://startvolt.com/academy/" aria-haspopup="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" aria-hidden="true" focusable="false">
+                  <path d="M9.60205 3.48688C9.75482 3.42144 9.92585 3.42144 10.0786 3.48688L19.064 7.33649C19.3075 7.44083 19.4673 7.69394 19.4673 7.97516C19.4673 7.98433 19.4647 7.99339 19.4644 8.0025C19.4646 8.01015 19.4673 8.01823 19.4673 8.02594V12.2525C19.4673 12.6323 19.1798 12.94 18.8257 12.94C18.4717 12.9398 18.1851 12.6322 18.1851 12.2525V8.98883L15.3813 10.19V15.7056C15.3813 15.8899 15.3124 16.0666 15.1899 16.1959L15.188 16.1968L15.186 16.1998L15.1782 16.2066L15.1558 16.231C15.1364 16.2506 15.1086 16.2775 15.0737 16.3111C15.0039 16.3781 14.9036 16.4713 14.7749 16.5816C14.518 16.8019 14.146 17.0931 13.6792 17.3843C12.75 17.9638 11.4117 18.5621 9.83838 18.5621C8.26518 18.562 6.92762 17.9637 5.99854 17.3843C5.53168 17.0931 5.1598 16.8019 4.90283 16.5816C4.7741 16.4712 4.67289 16.3781 4.60303 16.3111C4.56832 16.2777 4.54133 16.2506 4.52197 16.231L4.49854 16.2066L4.48877 16.1968V16.1959C4.49266 16.1914 4.53218 16.1467 4.93701 15.7056L4.48779 16.1959C4.36533 16.0666 4.29641 15.8899 4.29639 15.7056V10.189L0.616699 8.61285C0.373308 8.50853 0.213505 8.25621 0.213379 7.97516C0.213379 7.69394 0.373161 7.44083 0.616699 7.33649L9.60205 3.48688ZM5.57861 15.398C5.61526 15.4311 5.65719 15.4676 5.70361 15.5074C5.92099 15.6937 6.24057 15.9448 6.64307 16.1959C7.45321 16.7011 8.56651 17.187 9.83838 17.1871C11.1103 17.1871 12.2235 16.7011 13.0337 16.1959C13.4363 15.9447 13.7566 15.6937 13.9741 15.5074C14.0205 15.4676 14.0625 15.4311 14.0991 15.398V10.7398L10.0786 12.4634C9.92585 12.5288 9.75482 12.5288 9.60205 12.4634L5.57861 10.7388V15.398ZM2.58252 7.97516L9.84033 11.0845L17.0981 7.97516L9.84033 4.86481L2.58252 7.97516Z" />
+                </svg>
+                <span class="sv-header-icon-link__text">Академия</span>
+              </a>
+              <div class="sv-header__submenu" aria-label="Разделы Академии">
+                <a class="sv-header__submenu-link" href="https://startvolt.com/academy/">
+                  Академия Стартвольт
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.7 5.3 15.4 12l-6.7 6.7-1.4-1.4 5.3-5.3-5.3-5.3 1.4-1.4Z"/></svg>
+                </a>
+                <a class="sv-header__submenu-link" href="https://startvolt.com/academy/library/">
+                  Обучающая библиотека
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.7 5.3 15.4 12l-6.7 6.7-1.4-1.4 5.3-5.3-5.3-5.3 1.4-1.4Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <a class="sv-header__link sv-header-icon-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">
               <svg viewBox="0 0 18 16" aria-hidden="true">
                 <path d="M7 .25A.27.27 0 0 0 6.75 0h-1.5A.25.25 0 0 0 5 .25V5h2v-4.75Zm-4 0A.27.27 0 0 0 2.75 0H.25A.25.25 0 0 0 0 .25V5h3v-4.75Zm-3 15.5a.23.23 0 0 0 .25.25h2.5a.24.24 0 0 0 .25-.25V11H0v4.75Zm13-15.5a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm3 0a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm-6 0A.27.27 0 0 0 9.75 0h-.5A.25.25 0 0 0 9 .25V5h1v-4.75Zm4 15.5a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-9 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11H5v4.75Zm6 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-2 0a.23.23 0 0 0 .25.25h.5a.24.24 0 0 0 .25-.25V11H9v4.75ZM17.75 7H.25a.25.25 0 0 0-.25.25v1.5A.23.23 0 0 0 .25 9h17.5a.24.24 0 0 0 .25-.25v-1.5a.27.27 0 0 0-.25-.25Z"/>
               </svg>
-              <span class="header-icon-link__text">Кросс-коды</span>
+              <span class="sv-header-icon-link__text">Кросс-коды</span>
             </a>
-            <a class="page-header__link header-icon-link" href="https://startvolt.com/materials/foto/">
+            <a class="sv-header__link sv-header-icon-link" href="https://startvolt.com/materials/foto/">
               <svg viewBox="0 0 12 16" aria-hidden="true">
                 <path d="M12 3.81a.93.93 0 0 0-.25-.53l-3-3A1 1 0 0 0 8.19 0H8v4h4ZM7.75 5A.72.72 0 0 1 7 4.25V0H.75A.74.74 0 0 0 0 .75v14.5a.72.72 0 0 0 .75.75h10.5a.74.74 0 0 0 .75-.75V5Zm-4.25.5A1.5 1.5 0 0 1 5 7a1.49 1.49 0 0 1-1.5 1.5A1.5 1.5 0 0 1 2 7a1.52 1.52 0 0 1 1.5-1.5ZM10 13H2v-1.5l1.22-1.25a.4.4 0 0 1 .53 0L5 11.5l3.25-3.22a.37.37 0 0 1 .53 0L10 9.5V13Z"/>
               </svg>
-              <span class="header-icon-link__text">Фото</span>
+              <span class="sv-header-icon-link__text">Фото</span>
             </a>
-            <a class="page-header__link header-icon-link" href="https://startvolt.com/materials/">
+            <a class="sv-header__link sv-header-icon-link" href="https://startvolt.com/materials/">
               <svg viewBox="0 0 18 14" aria-hidden="true">
                 <path d="M16.31 2.25H9.56L7.63.35A1.14 1.14 0 0 0 6.82 0H1.69A1.69 1.69 0 0 0 0 1.69v10.12a1.67 1.67 0 0 0 1.69 1.69h14.62A1.69 1.69 0 0 0 18 11.81V3.94a1.71 1.71 0 0 0-1.69-1.69Zm0 9.56H1.69V1.69h4.92l1.9 1.93a1.12 1.12 0 0 0 .81.32h7v7.87Z"/>
               </svg>
-              <span class="header-icon-link__text">Материалы</span>
+              <span class="sv-header-icon-link__text">Материалы</span>
             </a>
-            <a class="cart-button" href="https://startvolt.com/cart/" aria-label="Корзина">
+            <a class="sv-cart-button" href="https://startvolt.com/cart/" aria-label="Корзина">
               <svg viewBox="0 0 18 18" aria-hidden="true">
                 <path d="M17.22 4H4.5l-.28-1.38A.77.77 0 0 0 3.5 2H.38A.36.36 0 0 0 0 2.38v.75c0 .22.16.37.38.37h2.5l2.15 11.13A1.95 1.95 0 0 0 4.5 16c0 1.13.88 2 2 2a1.97 1.97 0 0 0 1.72-3h4.53c-.16.28-.25.72-.25 1 0 1.13.88 2 2 2 1.09 0 2-.88 2-2 0-.56-.25-1.06-.63-1.44l.03-.12c.1-.47-.25-.94-.75-.94H6.34L6.06 12h9.75c.38 0 .66-.22.75-.56l1.41-6.5c.1-.47-.25-.94-.75-.94ZM6.5 16.75a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm8 0a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm.72-6.25H5.75l-.97-5h11.53l-1.09 5Z" fill="currentColor"/>
               </svg>
+              <span class="sv-cart-button__badge">1</span>
             </a>
-            <div class="page-header__languages">
-              <div class="page-header__languages-current">
+            <div class="sv-header__languages">
+              <div class="sv-header__languages-current">
                 RU
                 <svg viewBox="0 0 8 5" aria-hidden="true">
                   <path d="M3.56 4.38a.28.28 0 0 0 .4 0L7.42.93a.27.27 0 0 0 0-.4L7 .09a.27.27 0 0 0-.4 0L3.77 2.85 1 .09a.27.27 0 0 0-.4 0L.09.53a.27.27 0 0 0 0 .4l3.47 3.45Z"/>
                 </svg>
               </div>
-              <div class="page-header__languages-dropdown">
-                <div class="page-header__languages-dropdown-inner">
+              <div class="sv-header__languages-dropdown">
+                <div class="sv-header__languages-dropdown-inner">
                   <a href="https://startvolt.com/en/">EN</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="page-header__mobile-actions">
-            <a class="cart-button cart-button--mobile-header" href="https://startvolt.com/cart/" aria-label="Корзина">
-              <svg viewBox="0 0 18 18" aria-hidden="true">
-                <path d="M17.22 4H4.5l-.28-1.38A.77.77 0 0 0 3.5 2H.38A.36.36 0 0 0 0 2.38v.75c0 .22.16.37.38.37h2.5l2.15 11.13A1.95 1.95 0 0 0 4.5 16c0 1.13.88 2 2 2a1.97 1.97 0 0 0 1.72-3h4.53c-.16.28-.25.72-.25 1 0 1.13.88 2 2 2 1.09 0 2-.88 2-2 0-.56-.25-1.06-.63-1.44l.03-.12c.1-.47-.25-.94-.75-.94H6.34L6.06 12h9.75c.38 0 .66-.22.75-.56l1.41-6.5c.1-.47-.25-.94-.75-.94ZM6.5 16.75a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm8 0a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm.72-6.25H5.75l-.97-5h11.53l-1.09 5Z" fill="currentColor"/>
+          <div class="sv-header__mobile-actions">
+            <a class="sv-header__mobile-search" href="https://startvolt.com/search/" aria-label="Поиск по сайту">
+              <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                <circle cx="12.5" cy="12.5" r="7.5"></circle>
+                <path d="m18 18 6 6"></path>
               </svg>
             </a>
-            <button class="page-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
-              <span></span>
-              <span></span>
-              <span></span>
+            <button class="sv-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                <path d="M25.1406 6.84375C25.4453 6.84375 25.75 6.58984 25.75 6.23438V4.60938C25.75 4.30469 25.4453 4 25.1406 4H3.60938C3.25391 4 3 4.30469 3 4.60938V6.23438C3 6.58984 3.25391 6.84375 3.60938 6.84375H25.1406ZM25.1406 14.9688C25.4453 14.9688 25.75 14.7148 25.75 14.3594V12.7344C25.75 12.4297 25.4453 12.125 25.1406 12.125H3.60938C3.25391 12.125 3 12.4297 3 12.7344V14.3594C3 14.7148 3.25391 14.9688 3.60938 14.9688H25.1406ZM25.1406 23.0938C25.4453 23.0938 25.75 22.8398 25.75 22.4844V20.8594C25.75 20.5547 25.4453 20.25 25.1406 20.25H3.60938C3.25391 20.25 3 20.5547 3 20.8594V22.4844C3 22.8398 3.25391 23.0938 3.60938 23.0938H25.1406Z" />
+              </svg>
             </button>
           </div>
         </div>
-
-        <div class="page-header__mobile-links" aria-label="Быстрые ссылки">
-          <a class="page-header__mobile-link" href="https://startvolt.com/calendar/">
-            <svg viewBox="0 0 16 16" aria-hidden="true">
-              <path d="M5 0a1 1 0 0 1 1 1v1h4V1a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 16 4.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 13.5v-9A2.5 2.5 0 0 1 2.5 2H4V1a1 1 0 0 1 1-1Zm9 6H2v7.5c0 .28.22.5.5.5h11a.5.5 0 0 0 .5-.5V6ZM2.5 4a.5.5 0 0 0-.5.5V5h12v-.5a.5.5 0 0 0-.5-.5h-11Z"/>
-            </svg>
-            Календарь
-          </a>
-          <a class="page-header__mobile-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">
-            <svg viewBox="0 0 18 16" aria-hidden="true">
-              <path d="M7 .25A.27.27 0 0 0 6.75 0h-1.5A.25.25 0 0 0 5 .25V5h2v-4.75Zm-4 0A.27.27 0 0 0 2.75 0H.25A.25.25 0 0 0 0 .25V5h3v-4.75Zm-3 15.5a.23.23 0 0 0 .25.25h2.5a.24.24 0 0 0 .25-.25V11H0v4.75Zm13-15.5a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm3 0a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm-6 0A.27.27 0 0 0 9.75 0h-.5A.25.25 0 0 0 9 .25V5h1v-4.75Zm4 15.5a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-9 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11H5v4.75Zm6 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-2 0a.23.23 0 0 0 .25.25h.5a.24.24 0 0 0 .25-.25V11H9v4.75ZM17.75 7H.25a.25.25 0 0 0-.25.25v1.5A.23.23 0 0 0 .25 9h17.5a.24.24 0 0 0 .25-.25v-1.5a.27.27 0 0 0-.25-.25Z"/>
-            </svg>
-            Кросс-коды
-          </a>
-          <a class="page-header__mobile-link" href="https://startvolt.com/materials/">
-            <svg viewBox="0 0 18 14" aria-hidden="true">
-              <path d="M16.31 2.25H9.56L7.63.35A1.14 1.14 0 0 0 6.82 0H1.69A1.69 1.69 0 0 0 0 1.69v10.12a1.67 1.67 0 0 0 1.69 1.69h14.62A1.69 1.69 0 0 0 18 11.81V3.94a1.71 1.71 0 0 0-1.69-1.69Zm0 9.56H1.69V1.69h4.92l1.9 1.93a1.12 1.12 0 0 0 .81.32h7v7.87Z"/>
-            </svg>
-            Материалы
-          </a>
-        </div>
       </div>
 
-      <div class="page-header__menu" aria-label="Мобильная навигация">
-        <ul class="page-header__menu-list">
-          <li><a class="page-header__nav-link" href="https://startvolt.com/about/">О компании</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/garantiya/">Гарантия</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/where-buy/">Точки продаж</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/news/">Новости</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/contacts/">Контакты</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/calendar/">Календарь</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843">Кросс-коды</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/materials/foto/">Фото</a></li>
-          <li><a class="page-header__nav-link" href="https://startvolt.com/materials/">Материалы</a></li>
-        </ul>
-        <div class="page-header__menu-languages">
-          <span>RU</span>
-          <a href="https://startvolt.com/en/">EN</a>
+      <div class="sv-header__menu" aria-label="Мобильная навигация">
+        <div class="sv-header__menu-header">
+          <a href="https://startvolt.com/" class="sv-header__menu-logo" aria-label="STARTVOLT">
+            <img src="assets/img/logo.svg" width="66" height="36" alt="">
+          </a>
+          <div class="sv-header__menu-actions">
+            <a class="sv-cart-button" href="https://startvolt.com/cart/" aria-label="Корзина">
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="M17.22 4H4.5l-.28-1.38A.77.77 0 0 0 3.5 2H.38A.36.36 0 0 0 0 2.38v.75c0 .22.16.37.38.37h2.5l2.15 11.13A1.95 1.95 0 0 0 4.5 16c0 1.13.88 2 2 2a1.97 1.97 0 0 0 1.72-3h4.53c-.16.28-.25.72-.25 1 0 1.13.88 2 2 2 1.09 0 2-.88 2-2 0-.56-.25-1.06-.63-1.44l.03-.12c.1-.47-.25-.94-.75-.94H6.34L6.06 12h9.75c.38 0 .66-.22.75-.56l1.41-6.5c.1-.47-.25-.94-.75-.94ZM6.5 16.75a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm8 0a.72.72 0 0 1-.75-.75c0-.4.31-.75.75-.75.4 0 .75.34.75.75 0 .44-.34.75-.75.75Zm.72-6.25H5.75l-.97-5h11.53l-1.09 5Z" fill="currentColor"/>
+              </svg>
+              <span class="sv-cart-button__badge">1</span>
+            </a>
+            <button class="sv-header__menu-close" type="button" aria-label="Закрыть меню">
+              <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                <path d="m6 6 16 16M22 6 6 22"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="sv-header__menu-content">
+          <ul class="sv-header__menu-list">
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/about/">О компании</a></li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/garantiya/">Гарантия</a></li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/where-buy/">Точки продаж</a></li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/news/">Новости</a></li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/contacts/">Контакты</a></li>
+          </ul>
+          <ul class="sv-header__menu-list">
+            <li class="sv-header__academy-item">
+              <button class="sv-header__nav-link sv-header__nav-link--academy sv-header__academy-button" type="button" aria-expanded="false">
+                <svg viewBox="0 0 21 22" aria-hidden="true" focusable="false"><path d="M9.60205 3.48688C9.75482 3.42144 9.92585 3.42144 10.0786 3.48688L19.064 7.33649C19.3075 7.44083 19.4673 7.69394 19.4673 7.97516C19.4673 7.98433 19.4647 7.99339 19.4644 8.0025C19.4646 8.01015 19.4673 8.01823 19.4673 8.02594V12.2525C19.4673 12.6323 19.1798 12.94 18.8257 12.94C18.4717 12.9398 18.1851 12.6322 18.1851 12.2525V8.98883L15.3813 10.19V15.7056C15.3813 15.8899 15.3124 16.0666 15.1899 16.1959L15.188 16.1968L15.186 16.1998L15.1782 16.2066L15.1558 16.231C15.1364 16.2506 15.1086 16.2775 15.0737 16.3111C15.0039 16.3781 14.9036 16.4713 14.7749 16.5816C14.518 16.8019 14.146 17.0931 13.6792 17.3843C12.75 17.9638 11.4117 18.5621 9.83838 18.5621C8.26518 18.562 6.92762 17.9637 5.99854 17.3843C5.53168 17.0931 5.1598 16.8019 4.90283 16.5816C4.7741 16.4712 4.67289 16.3781 4.60303 16.3111C4.56832 16.2777 4.54133 16.2506 4.52197 16.231L4.49854 16.2066L4.48877 16.1968V16.1959C4.49266 16.1914 4.53218 16.1467 4.93701 15.7056L4.48779 16.1959C4.36533 16.0666 4.29641 15.8899 4.29639 15.7056V10.189L0.616699 8.61285C0.373308 8.50853 0.213505 8.25621 0.213379 7.97516C0.213379 7.69394 0.373161 7.44083 0.616699 7.33649L9.60205 3.48688ZM5.57861 15.398C5.61526 15.4311 5.65719 15.4676 5.70361 15.5074C5.92099 15.6937 6.24057 15.9448 6.64307 16.1959C7.45321 16.7011 8.56651 17.187 9.83838 17.1871C11.1103 17.1871 12.2235 16.7011 13.0337 16.1959C13.4363 15.9447 13.7566 15.6937 13.9741 15.5074C14.0205 15.4676 14.0625 15.4311 14.0991 15.398V10.7398L10.0786 12.4634C9.92585 12.5288 9.75482 12.5288 9.60205 12.4634L5.57861 10.7388V15.398ZM2.58252 7.97516L9.84033 11.0845L17.0981 7.97516L9.84033 4.86481L2.58252 7.97516Z" /></svg>
+                <span>Академия</span>
+                <svg class="sv-header__academy-caret" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M3.528 5.528a.667.667 0 0 1 .944 0L8 9.057l3.528-3.529a.667.667 0 1 1 .944.944l-4 4a.667.667 0 0 1-.944 0l-4-4a.667.667 0 0 1 0-.944Z" />
+                </svg>
+              </button>
+              <ul class="sv-header__mobile-submenu" hidden>
+                <li><a class="sv-header__mobile-submenu-link" href="https://startvolt.com/academy/">Об академии СТАРТВОЛЬТ</a></li>
+                <li><a class="sv-header__mobile-submenu-link" href="https://startvolt.com/academy/library/">Обучающая библиотека</a></li>
+              </ul>
+            </li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/materials/download/?type=one&amp;file=1616843"><svg viewBox="0 0 18 16" aria-hidden="true"><path d="M7 .25A.27.27 0 0 0 6.75 0h-1.5A.25.25 0 0 0 5 .25V5h2v-4.75Zm-4 0A.27.27 0 0 0 2.75 0H.25A.25.25 0 0 0 0 .25V5h3v-4.75Zm-3 15.5a.23.23 0 0 0 .25.25h2.5a.24.24 0 0 0 .25-.25V11H0v4.75Zm13-15.5a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm3 0a.27.27 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25V5h2v-4.75Zm-6 0A.27.27 0 0 0 9.75 0h-.5A.25.25 0 0 0 9 .25V5h1v-4.75Zm4 15.5a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-9 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11H5v4.75Zm6 0a.23.23 0 0 0 .25.25h1.5a.24.24 0 0 0 .25-.25V11h-2v4.75Zm-2 0a.23.23 0 0 0 .25.25h.5a.24.24 0 0 0 .25-.25V11H9v4.75ZM17.75 7H.25a.25.25 0 0 0-.25.25v1.5A.23.23 0 0 0 .25 9h17.5a.24.24 0 0 0 .25-.25v-1.5a.27.27 0 0 0-.25-.25Z"/></svg><span>Кросс-коды</span></a></li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/materials/foto/"><svg viewBox="0 0 12 16" aria-hidden="true"><path d="M12 3.81a.93.93 0 0 0-.25-.53l-3-3A1 1 0 0 0 8.19 0H8v4h4ZM7.75 5A.72.72 0 0 1 7 4.25V0H.75A.74.74 0 0 0 0 .75v14.5a.72.72 0 0 0 .75.75h10.5a.74.74 0 0 0 .75-.75V5Zm-4.25.5A1.5 1.5 0 0 1 5 7a1.49 1.49 0 0 1-1.5 1.5A1.5 1.5 0 0 1 2 7a1.52 1.52 0 0 1 1.5-1.5ZM10 13H2v-1.5l1.22-1.25a.4.4 0 0 1 .53 0L5 11.5l3.25-3.22a.37.37 0 0 1 .53 0L10 9.5V13Z"/></svg><span>Фото</span></a></li>
+            <li><a class="sv-header__nav-link" href="https://startvolt.com/materials/"><svg viewBox="0 0 18 14" aria-hidden="true"><path d="M16.31 2.25H9.56L7.63.35A1.14 1.14 0 0 0 6.82 0H1.69A1.69 1.69 0 0 0 0 1.69v10.12a1.67 1.67 0 0 0 1.69 1.69h14.62A1.69 1.69 0 0 0 18 11.81V3.94a1.71 1.71 0 0 0-1.69-1.69Zm0 9.56H1.69V1.69h4.92l1.9 1.93a1.12 1.12 0 0 0 .81.32h7v7.87Z"/></svg><span>Материалы</span></a></li>
+          </ul>
+          <div class="sv-header__menu-languages">
+            <span>RU</span>
+            <a href="https://startvolt.com/en/">EN</a>
+          </div>
+        <div class="sv-header__menu-shop">
+          <p class="sv-header__menu-shop-text">Карвильшоп – фирменный интернет-магазин брендов LUZAR, TRIALLI, STARTVOLT, AIRLINE и CARVILLE RACING</p>
+          <a class="sv-header__menu-shop-button" href="https://carvilleshop.ru/">
+            Карвильшоп
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M11.9981 3.33301C12.1746 3.33313 12.3439 3.40357 12.4688 3.52832C12.5938 3.65334 12.6641 3.82319 12.6641 4V9.33301C12.6641 9.50982 12.5938 9.67966 12.4688 9.80469C12.3439 9.92954 12.1747 9.99988 11.9981 10C11.8213 10 11.6514 9.92967 11.5264 9.80469C11.4014 9.67966 11.3311 9.50982 11.3311 9.33301V5.60938L4.69729 12.2422C4.57155 12.3636 4.40334 12.4312 4.22854 12.4297C4.05379 12.4281 3.88629 12.358 3.76272 12.2344C3.63927 12.1108 3.56892 11.9432 3.5674 11.7686C3.56599 11.5939 3.63355 11.4254 3.7549 11.2998L10.3887 4.66699H6.66408C6.48734 4.66694 6.31739 4.59666 6.1924 4.47168C6.06744 4.34666 5.99807 4.17677 5.99807 4C5.99807 3.82323 6.06744 3.65334 6.1924 3.52832C6.31739 3.40334 6.48734 3.33306 6.66408 3.33301H11.9981Z" />
+            </svg>
+          </a>
+        </div>
         </div>
       </div>
     </header>
@@ -344,6 +381,6 @@
       </div>
     </footer>
 
-    <script src="assets/js/startvolt.js"></script>
+    <script src="assets/js/startvolt-header.js"></script>
   </body>
 </html>

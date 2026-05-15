@@ -124,6 +124,11 @@
 
 .academy-breadcrumbs a {
   color: #f9f9f9;
+  transition: color 0.2s ease;
+}
+
+.academy-breadcrumbs a:hover {
+  color: #fff;
 }
 
 .academy-breadcrumbs__separator {
@@ -269,6 +274,9 @@
   min-height: 18.2rem;
   overflow: hidden;
   background: #fff;
+  transition:
+    box-shadow 0.24s ease,
+    transform 0.24s ease;
 }
 
 .academy-program-card img {
@@ -280,6 +288,7 @@
   max-width: none;
   object-fit: cover;
   object-position: bottom;
+  transition: transform 0.32s ease;
 }
 
 .academy-program-card h3 {
@@ -293,6 +302,20 @@
   font-size: 2.5rem;
   line-height: 1;
   letter-spacing: 0.02em;
+  transition: color 0.24s ease;
+}
+
+.academy-program-card:hover {
+  box-shadow: 0 0.8rem 1.8rem -1.2rem rgba(8, 0, 1, 0.35);
+  transform: translateY(-0.2rem);
+}
+
+.academy-program-card:hover img {
+  transform: scale(1.06);
+}
+
+.academy-program-card:hover h3 {
+  color: #bb2830;
 }
 
 .academy-formats {
@@ -551,6 +574,16 @@
   font-size: 1.6rem;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.academy-events__tab:not(.is-active):hover {
+  color: #bb2830;
+  background: rgba(187, 40, 48, 0.08);
+  transform: translateY(-0.1rem);
 }
 
 .academy-events__tab.is-active {
@@ -592,6 +625,9 @@
   overflow: hidden;
   background: #f9f9f9;
   border-radius: 0.14rem;
+  transition:
+    box-shadow 0.24s ease,
+    transform 0.24s ease;
 }
 
 .academy-event-card__media {
@@ -609,6 +645,10 @@
   object-position: bottom;
   opacity: 0.9;
   filter: grayscale(1);
+  transition:
+    filter 0.28s ease,
+    opacity 0.28s ease,
+    transform 0.34s ease;
 }
 
 .academy-event-card__content {
@@ -653,6 +693,9 @@
   font-size: 1.4rem;
   line-height: 1;
   text-align: center;
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease;
 }
 
 .academy-event-card__button[href]::after {
@@ -676,6 +719,27 @@
   height: 0.8rem;
   flex: 0 0 auto;
   fill: currentColor;
+  transition: transform 0.22s ease;
+}
+
+.academy-event-card:has(.academy-event-card__button[href]):hover {
+  box-shadow: 0 0.8rem 1.8rem -1.2rem rgba(8, 0, 1, 0.35);
+  transform: translateY(-0.2rem);
+}
+
+.academy-event-card:has(.academy-event-card__button[href]):hover .academy-event-card__media img {
+  opacity: 1;
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.academy-event-card__button[href]:hover {
+  color: #fff;
+  background: #a91e26;
+}
+
+.academy-event-card__button[href]:hover .academy-event-card__button-icon {
+  transform: translate(0.2rem, -0.2rem);
 }
 
 .academy-event-card--waiting .academy-event-card__button {

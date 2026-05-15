@@ -35,6 +35,14 @@
   color: #1a1919;
 }
 
+.academy-article-breadcrumbs a {
+  transition: color 0.2s ease;
+}
+
+.academy-article-breadcrumbs a:hover {
+  color: #bb2830;
+}
+
 .academy-article-breadcrumbs svg {
   width: 1.6rem;
   height: 1.6rem;
@@ -310,6 +318,14 @@
   gap: 0.8rem;
 }
 
+@media (min-width: 901px) {
+  .academy-article-sidebar {
+    position: sticky;
+    bottom: 2.4rem;
+    align-self: end;
+  }
+}
+
 .academy-article-card {
   min-width: 0;
 }
@@ -423,6 +439,7 @@
   font-size: 1.6rem;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  transition: color 0.2s ease;
 }
 
 .academy-article-file-link svg,
@@ -443,6 +460,12 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.academy-article-file-link:hover,
+.academy-article-download-all:hover {
+  color: #bb2830;
 }
 
 .academy-article-share {
@@ -478,6 +501,14 @@
   width: 3.8rem;
   height: 3.8rem;
   border-radius: 0.2rem;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.academy-article-share__link:hover {
+  box-shadow: 0 0.4rem 1rem -0.6rem rgba(0, 0, 0, 0.35);
+  transform: translateY(-0.2rem);
 }
 
 .academy-article-share__link img {
@@ -539,6 +570,11 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.academy-article-subscribe__form button:hover {
+  background: #a91e26;
 }
 
 @media (max-width: 900px) {

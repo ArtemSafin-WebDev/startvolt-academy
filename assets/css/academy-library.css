@@ -35,6 +35,11 @@ body.academy-library-body .page-header__row {
 
 .academy-library__breadcrumbs a {
   color: #1a1919;
+  transition: color 0.2s ease;
+}
+
+.academy-library__breadcrumbs a:hover {
+  color: #bb2830;
 }
 
 .academy-library__breadcrumbs span {
@@ -116,6 +121,12 @@ body.academy-library-body .page-header__row {
   min-height: 4.2rem;
   background: #fff;
   border: 1px solid #e9e9e9;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.academy-library__search:focus-within {
+  border-color: rgba(187, 40, 48, 0.55);
+  box-shadow: 0 0.4rem 1.2rem -1rem rgba(187, 40, 48, 0.45);
 }
 
 .academy-library__search input {

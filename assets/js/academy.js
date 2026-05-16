@@ -1,4 +1,40 @@
 const eventsRoot = document.querySelector(".academy-events");
+const academyIntroParallax = document.querySelector("[data-academy-intro-parallax]");
+
+if (academyIntroParallax) {
+  const intro = academyIntroParallax.closest(".academy-intro");
+  const reducedMotionMedia = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let rafId = 0;
+
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+  const updateIntroParallax = () => {
+    rafId = 0;
+
+    if (!intro || reducedMotionMedia.matches) {
+      academyIntroParallax.style.setProperty("--academy-intro-parallax", "0px");
+      return;
+    }
+
+    const rect = intro.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const progress = (viewportHeight - rect.top) / (viewportHeight + rect.height) - 0.5;
+    const isMobile = window.innerWidth < 768;
+    const offset = isMobile ? clamp(progress * 48, -28, 28) : clamp(progress * 72, -40, 40);
+
+    academyIntroParallax.style.setProperty("--academy-intro-parallax", `${offset.toFixed(2)}px`);
+  };
+
+  const requestIntroParallaxUpdate = () => {
+    if (rafId) return;
+    rafId = window.requestAnimationFrame(updateIntroParallax);
+  };
+
+  updateIntroParallax();
+  window.addEventListener("scroll", requestIntroParallaxUpdate, { passive: true });
+  window.addEventListener("resize", requestIntroParallaxUpdate);
+  reducedMotionMedia.addEventListener("change", requestIntroParallaxUpdate);
+}
 
 if (eventsRoot) {
   const tabs = Array.from(eventsRoot.querySelectorAll("[data-events-tab]"));

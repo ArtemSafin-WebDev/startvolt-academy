@@ -158,6 +158,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
+  pointer-events: none;
 }
 
 .academy-intro__picture img,
@@ -166,6 +167,11 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
+}
+
+.academy-intro__picture--main {
+  transform: translate3d(0, var(--academy-intro-parallax, 0px), 0);
+  will-change: transform;
 }
 
 .academy-intro__inner {

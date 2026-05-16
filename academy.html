@@ -187,9 +187,13 @@
 
     <main class="page-main academy-page">
       <section class="academy-intro">
-        <picture class="academy-intro__picture" aria-hidden="true">
-          <source media="(max-width: 767px)" srcset="assets/img/academy-intro/bg-mobile.webp">
-          <img src="assets/img/academy-intro/bg.webp" alt="">
+        <picture class="academy-intro__picture academy-intro__picture--bg" aria-hidden="true">
+          <source media="(max-width: 767px)" srcset="assets/img/academy-intro/bg-mobile-layer.webp">
+          <img src="assets/img/academy-intro/bg-desktop.webp" alt="">
+        </picture>
+        <picture class="academy-intro__picture academy-intro__picture--main" aria-hidden="true" data-academy-intro-parallax>
+          <source media="(max-width: 767px)" srcset="assets/img/academy-intro/main-mobile.webp">
+          <img src="assets/img/academy-intro/main-desktop.webp" alt="">
         </picture>
         <div class="container academy-intro__inner">
           <div id="breadcrumbs" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
